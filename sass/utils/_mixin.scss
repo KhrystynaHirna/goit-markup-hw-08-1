@@ -5,7 +5,7 @@
     }   
 }
 @mixin flex ($jc: false, $ai: false, $fd: false, $fw: false) {
-    @extend %d-flex;
+    display: flex;
     @if ($jc) {
         justify-content: $jc;
     }
