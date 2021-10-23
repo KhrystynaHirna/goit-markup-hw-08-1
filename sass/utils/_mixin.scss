@@ -1,0 +1,38 @@
+@mixin transition ($transition-property) {
+    transition: 250ms var(--timing-function); 
+    @if (length($transition-property) > 0) {
+        transition-property: $transition-property;
+    }   
+}
+@mixin flex ($jc: false, $ai: false, $fd: false, $fw: false) {
+    @extend %d-flex;
+    @if ($jc) {
+        justify-content: $jc;
+    }
+     @if ($ai) {
+        align-items: $ai;
+    }
+    @if ($fd) {
+        flex-direction: $fd;
+    }
+    @if ($fw) {
+        flex-wrap: $fw;
+    }
+}
+@mixin border ($size:false, $color:false, $use-bb:false, $use-bt:false) {
+    @if ($size) {
+        border-width: $size;
+    }
+    @if ($color) {
+        border-color: $color;
+    }
+    @if ($use-bt) {
+        border-top: $use-bt;
+    } 
+     @if ($use-bb) {
+        border-bottom: $use-bb;
+    } 
+    @else {
+        border: $size solid $color;
+    }
+} 

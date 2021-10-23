@@ -1,0 +1,24 @@
+// Clients-section
+
+.clients-list {
+  list-style: none;
+  @include flex ($jc: space-between, $ai: center );
+  padding: 0 0 94px;
+  margin: 0;
+
+}
+.clients-list__link {
+  width: 170px;
+  height: 92px;
+  @include border (1px, var(--icon-color));
+  border-radius: 4px;
+  fill: var(--icon-color);
+  @include flex ($jc: center, $ai: center );
+  @include transition (fill);
+  @include transition (border-color);
+
+&:hover, &:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+ }
+}

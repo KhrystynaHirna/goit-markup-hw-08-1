@@ -1,0 +1,46 @@
+// header-block
+
+.page-header {
+  @include border ($use-bb:(var(--header-border-color)));
+}
+.page-header__container {
+  @include flex ($ai: center);
+  @extend .container;
+}  
+
+// header-info block
+.header-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
+  padding: 0;
+  margin-left: auto;
+  @include flex ($ai: center);
+}
+.header-info__item {
+  color: var(--paragraph-text-color);
+  @include flex ($ai: center);
+
+  &:hover, &:focus {
+    color: var(--accent-color);  
+  }
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.header-info__link {
+  color: var(--paragraph-text-color);
+  @include flex ($ai: center);
+  @include transition (color);
+
+  &:hover, &:focus {
+  color: var(--accent-color);  
+  }
+  @extend %link;
+}
+.header-info__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

@@ -1,0 +1,31 @@
+// Team-section
+
+.team-list {
+  @include flex ($jc: space-between);
+  padding-left: 0;
+
+  @extend %list;
+}
+.team-list__card {
+  text-align: center;
+  box-shadow: var(--team-card-shadow);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team-list__specialty {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-text-color);
+
+  margin-top: 0;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,27 @@
+// Logo
+
+.logo {
+  margin: 0;
+  color: var(--accent-color);
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  @include transition (color);
+
+  &:hover, &:focus {
+   color: var(--accent-color);   
+  }
+  @extend %link;
+
+  &--black {
+  color: var(--logo-black-color);
+  display: inline-block;
+  }
+
+  &--white {
+  color: var(--body-background-color);
+  display: inline-block;
+  margin-bottom: 20px;
+ }
+}
