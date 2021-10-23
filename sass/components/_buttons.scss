@@ -51,8 +51,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  @include flex ($ai: center);
-
+ 
   background: var(--body-background-color);
   @include border (1px,rgba(0, 0, 0, 0.1));
   cursor: pointer;
@@ -66,3 +65,70 @@
   }
  }
 }
+
+// .primary-button {
+//   background-color: var(--accent-color);
+//   color: var(--body-background-color);
+//   font-family: inherit;
+//   font-size: 16px;
+//   line-height: 1.9;
+//   letter-spacing: 0.06em;
+
+//   &--shadow {
+//   box-shadow: var(--primary-button-shadow);
+//   }
+//   border: none;
+//   border-radius: 4px;
+//   padding: 10px 32px;
+//   width: 200px;
+//   height: 50px;
+//   text-align: center;
+//   margin-top: 0;
+//   cursor: pointer;
+// }
+// .secondary-button {
+//   background: var(--team-background-color);
+//   color: var(--primary-text-color);
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.6;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+
+//   min-width: 73px;
+//   border-radius: 4px;
+//   border: transparent;
+
+//   padding: 6px 22px;
+//   margin-top: 0;
+//   cursor: pointer;
+//   @include transition (all);
+
+//   &:hover, &:focus {
+//     background: var(--accent-color);
+//   color: var(--body-background-color);
+//   box-shadow: var(--secondary-button-shadow); 
+//   }
+// }
+// // Modal button
+
+// .close-button {
+//   fill: var(--logo-black-color);
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+//   @include flex ($ai: center);
+
+//   background: var(--body-background-color);
+//   @include border (1px,rgba(0, 0, 0, 0.1));
+//   cursor: pointer;
+
+//   &__icon { 
+//    fill: var(--logo-black-color);
+//    @include transition (fill);
+   
+//   &:hover, &:focus {
+//   fill: var(--accent-color);
+//   }
+//  }
+// }

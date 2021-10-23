@@ -1,13 +1,91 @@
 // Clients-section
 
+// MOBILE
 .clients-list {
+  @media screen and (min-width: 480px) {
   list-style: none;
-  @include flex ($jc: space-between, $ai: center );
-  padding: 0 0 94px;
+  padding: 0 0 60px;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap; 
+  margin: -15px;
+   }
+  }
 
+.clients-list__item {
+  @media screen and (min-width: 480px) {
+    margin: 15px;
+  }
+}
+// .clients-list__item {
+//   @extend %list;
+//   @media screen and (max-width: 767px) {
+//   &:not(:nth-child(-n + 2)) {
+//   margin-top: 30px;
+//  }
+//   &:not(:nth-child(2n)) {
+//   margin-right: 30px;
+//  }
+// }  
+// }
+// TABLET
+// .clients-list__item {
+//   @media screen and (min-width: 768px) {
+//   &:not(:nth-child(-n + 3)) {
+//   margin-top: 30px;
+//  }
+//   &:not(:nth-child(3n)) {
+//   margin-right: 30px;
+//  }  
+//   }
+// }
+
+// MOBILE
+.clients-list__link {
+  @media screen and (min-width: 480px) {
+  width: 210px;
+  height: 92px; 
+  @include border (1px, var(--icon-color));
+  border-radius: 4px;
+  @include flex ($jc:center, $ai:center);
+  border-color: var(--icon-color);
+  fill: var(--icon-color);
+  @include transition (fill);
+  @include transition (border-color);
+
+&:hover, &:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+ }
+}
+}
+// TABLET
+.clients-list__link {
+  @media screen and (min-width: 768px) {
+  width: 226px;
+  height: 92px; 
+  @include border (1px, var(--icon-color));
+  border-radius: 4px;
+  @include flex ($jc:center, $ai:center);
+  border-color: var(--icon-color);
+  fill: var(--icon-color);
+  @include transition (fill);
+  @include transition (border-color);
+
+&:hover, &:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+ }
+}
+}
+// DESKTOP
+.clients-list {
+   @media screen and (min-width: 1200px) {
+  padding: 0 0 79px;
+   }
 }
 .clients-list__link {
+  @media screen and (min-width: 1200px) {
   width: 170px;
   height: 92px;
   @include border (1px, var(--icon-color));
@@ -21,4 +99,28 @@
   fill: var(--accent-color);
   border-color: var(--accent-color);
  }
+  }
 }
+
+// .clients-list {
+//   list-style: none;
+//   @include flex ($jc: space-between, $ai: center );
+//   padding: 0 0 94px;
+//   margin: 0;
+
+// }
+// .clients-list__link {
+//   width: 170px;
+//   height: 92px;
+//   @include border (1px, var(--icon-color));
+//   border-radius: 4px;
+//   fill: var(--icon-color);
+//   @include flex ($jc: center, $ai: center );
+//   @include transition (fill);
+//   @include transition (border-color);
+
+// &:hover, &:focus {
+//   fill: var(--accent-color);
+//   border-color: var(--accent-color);
+//  }
+// }

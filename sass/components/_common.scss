@@ -4,9 +4,18 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;  
 }
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto; 
+
+  @media screen and (min-width:480px) {
+  min-width: 480px;
+  }
+  @media screen and (min-width:768px) {
+  min-width: 768px;
+  }
+  @media screen and (min-width:1200px) {
+  min-width: 1200px;
+  }
 }
 .is-hidden {
   opacity: 0;
@@ -15,4 +24,27 @@ body {
 
 img {
   display: block;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
+
+
+// body {
+//   background-color: var(--body-background-color);
+//   color: var(--primary-text-color);
+//   font-family: 'Roboto', 'Arial', sans-serif;  
+// }
+// .container {
+//   width: 1200px;
+//   padding: 0 15px;
+//   margin: 0 auto; 
+// }
+// .is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+//   }
+
+// img {
+//   display: block;
+// }

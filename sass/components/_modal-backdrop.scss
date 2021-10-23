@@ -1,5 +1,4 @@
 // Modal-backdrop
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -11,6 +10,7 @@
 }
 
 .modal {
+  width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -29,6 +29,14 @@
   right: 0;
   top: 0;
   margin: 8px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+}
+.modal {
+  @media screen and (min-width:1200px) {
+  width: 528px;
   }
 }
 .modal__title {
@@ -42,3 +50,45 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+// .backdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.2);
+//   @include transition (opacity);
+// }
+
+// .modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+
+//   background: var(--body-background-color);
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 4px;
+//   padding: 40px;
+//   opacity: 1;
+//   @include transition (transform);
+
+//   & > .close-button {
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   margin: 8px; 
+//   }
+// }
+// .modal__title {
+//   margin: 0;
+//   font-weight: 700;
+//   margin-bottom: 12px;
+
+//   font-size: 20px;
+//   line-height: 1.15;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   color: var(--primary-text-color);
+// }

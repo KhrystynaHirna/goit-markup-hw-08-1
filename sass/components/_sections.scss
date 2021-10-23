@@ -1,44 +1,77 @@
+
 // Hero-section
 .main-section {
-  background-color: var(--footor-background-color);
-  color: var(--body-background-color);
-  margin-top: 0;
-  padding: 200px 0;
-  text-align: center;
-
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
+    // image(srcset="../img/hero-480px.jpg 1x, ../img/hero-768px.jpg 2x"),
     url(../img/hero.jpg);
+}
+.main-section {
+  background-color: var(--footor-background-color);
+  color: var(--body-background-color);
+  margin-top: 0;
+  padding: 118px 0 118px;
+  text-align: center;
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px;
+ }
+//  MOBILE
+ .main-section {
+   @media screen and (min-width:480px) {
+    background-size: 480px;
+ }
 }
-
-
+//  TABLET
+ .main-section {
+   @media screen and (min-width:768px) {
+    background-size: 768px;
+  }
+ }
+//  DESKTOP
+.main-section {
+   @media screen and (min-width:1200px) {
+    background-size: 1200px;
+    padding: 200px 0 200px;
+  }
+  }
 // Advantage-section
 .advantage-section {
-    padding: 94px 0 47px 0; 
+    padding-top: 60px; 
 }
 .advantage-section__container {
   @extend .container; 
 }
-
+// MOBILE + TABLET
 // Product-section
 .product-section {
-  padding: 47px 0 94px 0;
+   @media screen and (max-width:1199px) {
+   display: none;
+}
+}
+.product-section {
+   @media screen and (min-width:1200px) {
+   margin: 0;
+   padding: 94px 0;
+}
 }
 .product-section__container {
   @extend .container;
 }
-
 // Team-section
 .team-section {
+ @media screen and (min-width:768px) {
   background-color: var(--team-background-color);
-  padding: 94px 0;
+  padding: 60px 0;
+} 
+}
+.team-section {
+  @media screen and (min-width:1200px) {
+    padding: 94px 0;
+  }
 }
 .team-section__container {
   @extend .container;
@@ -46,7 +79,14 @@
 
 // Clients-section
 .clients-section {
-  padding-top: 94px;
+@media screen and (min-width:768px) {
+  padding: 60px 0 0;
+} 
+}
+.clients-section {
+  @media screen and (min-width:1200px) {
+    padding: 94px 0 0;
+  }
 }
 .clients-section__container {
   @extend .container;
@@ -54,8 +94,73 @@
 
 // Portfolio-section
 .portfolio-section {
-  padding: 94px 0; 
+  padding: 60px 0 0 0; 
 }
 .portfolio-section__container {
   @extend .container;
 }
+.portfolio-section {
+  @media screen and (min-width:1200px) {
+    padding: 94px 0; 
+  } 
+}
+// .main-section {
+//   background-color: var(--footor-background-color);
+//   color: var(--body-background-color);
+//   margin-top: 0;
+//   padding: 200px 0;
+//   text-align: center;
+
+//   background-image: linear-gradient(
+//       to right,
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url(../img/hero.jpg);
+
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: 1600px;
+// }
+
+
+// // Advantage-section
+// .advantage-section {
+//     padding: 94px 0 47px 0; 
+// }
+// .advantage-section__container {
+//   @extend .container; 
+// }
+
+// // Product-section
+// .product-section {
+//   padding: 47px 0 94px 0;
+// }
+// .product-section__container {
+//   @extend .container;
+// }
+
+// // Team-section
+// .team-section {
+//   background-color: var(--team-background-color);
+//   padding: 94px 0;
+// }
+// .team-section__container {
+//   @extend .container;
+// }
+
+// // Clients-section
+// .clients-section {
+//   padding-top: 94px;
+// }
+// .clients-section__container {
+//   @extend .container;
+// }
+
+// // Portfolio-section
+// .portfolio-section {
+//   padding: 94px 0; 
+// }
+// .portfolio-section__container {
+//   @extend .container;
+// }
