@@ -400,8 +400,8 @@ summary {
   margin: 0;
   color: var(--accent-color);
   font-family: 'Raleway', 'Arial', sans-serif;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   -webkit-transition: 250ms var(--timing-function);
   transition: 250ms var(--timing-function);
@@ -414,7 +414,7 @@ summary {
 }
 
 .logo--black {
-  color: var(--logo-black-color);
+  color: black;
   display: inline-block;
 }
 
