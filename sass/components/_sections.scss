@@ -7,7 +7,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     // image(srcset="../img/hero-480px.jpg 1x, ../img/hero-768px.jpg 2x"),
-    url(../img/hero.jpg);
+    url(/img/hero-480px.jpg);
 }
 .main-section {
   background-color: var(--footor-background-color);
@@ -63,8 +63,10 @@
 }
 // Team-section
 .team-section {
- @media screen and (min-width:768px) {
-  background-color: var(--team-background-color);
+ background-color: var(--team-background-color);
+}
+.team-section {
+ @media screen and (min-width:480px) {
   padding: 60px 0;
 } 
 }
@@ -79,7 +81,7 @@
 
 // Clients-section
 .clients-section {
-@media screen and (min-width:768px) {
+@media screen and (min-width:480px) {
   padding: 60px 0 0;
 } 
 }

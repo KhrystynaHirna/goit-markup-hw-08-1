@@ -773,12 +773,6 @@ summary {
   padding-left: 0;
 }
 
-@media screen and (min-width: 480px) {
-  .team-list {
-    padding-bottom: 60px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .team-list {
     -ms-flex-wrap: wrap;
@@ -1797,16 +1791,16 @@ img {
 
 .secondary-title {
   font-size: 28px;
-  line-height: 1.178;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .main-section {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/img/hero-480px.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero-480px.jpg);
 }
 
 .main-section {
@@ -1855,9 +1849,12 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+.team-section {
+  background-color: var(--team-background-color);
+}
+
+@media screen and (min-width: 480px) {
   .team-section {
-    background-color: var(--team-background-color);
     padding: 60px 0;
   }
 }
@@ -1868,7 +1865,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .clients-section {
     padding: 60px 0 0;
   }
