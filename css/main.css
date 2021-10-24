@@ -1702,8 +1702,9 @@ summary {
 
 .overlay {
   position: absolute;
-  width: 100%;
+  margin: 0;
   height: 100%;
+  width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(33, 150, 243, 0.9)), to(rgba(33, 150, 243, 0.9)));
   background-image: linear-gradient(to right, rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9));
   opacity: 0;
@@ -1716,7 +1717,6 @@ summary {
 }
 
 .overlay__text {
-  padding: 63px 24px;
   margin: 0;
   font-style: normal;
   font-weight: normal;
@@ -1724,6 +1724,29 @@ summary {
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--body-background-color);
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .overlay__text {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .overlay__text {
+    padding: 49px 24px;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay__text {
+    padding: 63px 24px;
+    height: 100%;
+  }
 }
 
 body {

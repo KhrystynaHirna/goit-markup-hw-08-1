@@ -56,11 +56,6 @@
   padding-top: 50px;
 }
 }
-// .portfolio-list {
-//   @media screen and (max-width:1199px) {
-//     padding-bottom: 60px;
-//   }
-// }
 // MOBILE
 .portfolio__item:not(:last-child) {
   @media screen and (max-width:767px) {
@@ -149,23 +144,23 @@
   overflow: hidden;
   
   @media screen and (min-width:1200px) {
-  width: 354px;
+  width: 370px;
   height: 294px;
   }
 }
-// .overlay {
-//   position: absolute;
-//   margin: 0;
-//   height: 100%;
-//   width: 100%;
-//   background-image: linear-gradient(
-//     to right,
-//     rgba(33, 150, 243, 0.9),
-//     rgba(33, 150, 243, 0.9)
-//   );
-//   opacity: 0;
-//   @include transition (transform);
-// }
+.overlay {
+  position: absolute;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(33, 150, 243, 0.9),
+    rgba(33, 150, 243, 0.9)
+  );
+  opacity: 0;
+  @include transition (transform);
+}
 // .overlay {
 //   @media screen and (min-width:768px) {
 //     max-width: 354px;
@@ -176,19 +171,19 @@
 //     max-width: 370px;
 //   }
 // }
-// .overlay__text {
-//     margin: 0;
-//     font-style: normal;
-//     font-weight: normal;
-//     font-size: 18px;
-//     line-height: 1.55;
-//     letter-spacing: 0.03em;
-//     color: var(--body-background-color);
-//     height: 100%;
-//     align-content: center;
-//   @media screen and (max-width:767px) {
-//     padding: 77px 24px;
-//   }
+.overlay__text {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--body-background-color);
+    height: 100%;
+    align-content: center;
+  // @media screen and (max-width:767px) {
+  //   padding: 77px 24px;
+  // }
 // }
 // .overlay__text {
 //   @media screen and (max-width:1199px) {
@@ -281,25 +276,25 @@
 //   position: relative;
 //   overflow: hidden;
 // }
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(
-    to right,
-    rgba(33, 150, 243, 0.9),
-    rgba(33, 150, 243, 0.9)
-  );
-  opacity: 0;
-  @include transition (transform);
-}
-.overlay__text {
-  padding: 63px 24px;
-  margin: 0;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-  color: var(--body-background-color);
-}
+// .overlay {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   background-image: linear-gradient(
+//     to right,
+//     rgba(33, 150, 243, 0.9),
+//     rgba(33, 150, 243, 0.9)
+//   );
+//   opacity: 0;
+//   @include transition (transform);
+// }
+// .overlay__text {
+//   padding: 63px 24px;
+//   margin: 0;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 18px;
+//   line-height: 1.55;
+//   letter-spacing: 0.03em;
+//   color: var(--body-background-color);
+// }
