@@ -16,7 +16,6 @@
   padding-bottom: 4px;
 }
 .form-field__input {
-  
   padding: 0 20px 0 42px;
   @include border (1px, rgba(33, 33, 33, 0.2));
   border-radius: 4px;
@@ -77,17 +76,24 @@
   transition-property: background-color;
   }
 }
+
 .form-field__checkbox-icon {
   width: 16px;
   height: 15px;
   fill: var(--body-background-color);
   border-radius: 2px;
-  border-width: 2px;
+  // border-width: 2px;
   border-color: var(--logo-black-color);
   border: 2px solid var(--logo-black-color);
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  display: flex;
 }
+// .form-field__svg {
+//     background-size: contain;
+//     justify-content: center;
+//     align-items: center;
+//   }
 
 .form-field__checkbox-text {
   font-size: 12px;
@@ -102,7 +108,10 @@
 .form-field__button {
   text-align: center;
 }
-
+// .form-field__svg {
+//   justify-content: center;
+//   align-items: center;
+// }
 // .form-field {
 //   @include flex ($fd: column);
 //   width: 100%;
