@@ -145,7 +145,7 @@
   
   @media screen and (min-width:1200px) {
   width: 370px;
-  height: 294px;
+  // height: 294px;
   }
 }
 .overlay {
@@ -160,17 +160,24 @@
   );
   opacity: 0;
   @include transition (transform);
+    @media screen and (max-width:767px) {
+    padding: 77px 24px;
 }
-// .overlay {
-//   @media screen and (min-width:768px) {
-//     max-width: 354px;
-//   }
-// }
-// .overlay {
-//   @media screen and (min-width:1200px) {
-//     max-width: 370px;
-//   }
-// }
+}
+.overlay {
+  @media screen and (min-width:768px) {
+    max-width: 354px;
+    padding: 24px;
+    height: auto;
+  }
+}
+.overlay {
+  @media screen and (min-width:1200px) {
+    max-width: 370px;
+    padding: 24px;
+    height: auto;
+  }
+}
 .overlay__text {
     margin: 0;
     font-style: normal;
@@ -181,10 +188,7 @@
     color: var(--body-background-color);
     height: 100%;
     align-content: center;
-  // @media screen and (max-width:767px) {
-  //   padding: 77px 24px;
 }
-// }
 // .overlay__text {
 //   @media screen and (max-width:1199px) {
 //     padding: 49px 24px;

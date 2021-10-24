@@ -1696,7 +1696,6 @@ summary {
 @media screen and (min-width: 1200px) {
   .portfolio__item-thumb {
     width: 370px;
-    height: 294px;
   }
 }
 
@@ -1714,6 +1713,28 @@ summary {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+}
+
+@media screen and (max-width: 767px) {
+  .overlay {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 354px;
+    padding: 24px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 370px;
+    padding: 24px;
+    height: auto;
+  }
 }
 
 .overlay__text {
