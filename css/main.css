@@ -1576,6 +1576,7 @@ summary {
 @media screen and (min-width: 1200px) {
   .portfolio-list {
     padding-top: 50px;
+    padding-bottom: 0;
   }
 }
 
@@ -1725,7 +1726,7 @@ summary {
   .overlay {
     max-width: 354px;
     padding: 24px;
-    height: auto;
+    height: 100%;
   }
 }
 
@@ -1733,7 +1734,7 @@ summary {
   .overlay {
     max-width: 370px;
     padding: 24px;
-    height: auto;
+    height: 100%;
   }
 }
 

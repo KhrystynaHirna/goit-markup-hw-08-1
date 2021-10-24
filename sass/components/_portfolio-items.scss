@@ -54,6 +54,7 @@
    }
   @media screen and (min-width:1200px) {
   padding-top: 50px;
+  padding-bottom: 0;
 }
 }
 // MOBILE
@@ -168,14 +169,14 @@
   @media screen and (min-width:768px) {
     max-width: 354px;
     padding: 24px;
-    height: auto;
+    height: 100%;
   }
 }
 .overlay {
   @media screen and (min-width:1200px) {
     max-width: 370px;
     padding: 24px;
-    height: auto;
+    height: 100%;
   }
 }
 .overlay__text {
