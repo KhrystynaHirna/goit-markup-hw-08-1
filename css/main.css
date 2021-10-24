@@ -1695,7 +1695,7 @@ summary {
 
 @media screen and (min-width: 1200px) {
   .portfolio__item-thumb {
-    width: 354px;
+    width: 370px;
     height: 294px;
   }
 }
@@ -1727,26 +1727,6 @@ summary {
   height: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
-}
-
-@media screen and (max-width: 767px) {
-  .overlay__text {
-    padding: 77px 24px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .overlay__text {
-    padding: 49px 24px;
-    height: 100%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .overlay__text {
-    padding: 63px 24px;
-    height: 100%;
-  }
 }
 
 body {
