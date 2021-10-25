@@ -29,9 +29,20 @@
 }
 .menu-button .icon-burger {
   display: block;
+  // z-index: 999;
+}
+.icon-burger {
+  width: 24px;
+  height: 16px;
+  background-size: contain;
+  fill: var(--body-background-color);
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 .menu-button.is-open .icon-cross {
 display: block;
+z-index: 2;
 }
 .menu-button.is-open .icon-burger {
 display: none;

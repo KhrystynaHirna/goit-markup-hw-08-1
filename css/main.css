@@ -2035,8 +2035,25 @@ img {
   display: block;
 }
 
+.icon-burger {
+  width: 24px;
+  height: 16px;
+  background-size: contain;
+  fill: var(--body-background-color);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menu-button.is-open .icon-cross {
   display: block;
+  z-index: 2;
 }
 
 .menu-button.is-open .icon-burger {
