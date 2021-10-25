@@ -2042,6 +2042,7 @@ img {
 
 .menu-button.is-open .icon-burger {
   display: none;
+  z-index: 2;
 }
 
 .menu-container.is-open {
