@@ -2,7 +2,7 @@
 
 // MOBILE
 .advantage-list {
-@extend %list; 
+// @extend %list; 
 @media screen and (min-width: 480px) {
   padding: 0;
   text-align: center;
