@@ -77,16 +77,13 @@ background-image: url(/img/hero.jpg);
   @extend .container;
 }
 // Team-section
+
 .team-section {
- background-color: var(--team-background-color);
-}
-.team-section {
- @media screen and (min-width:480px) {
+  background-color: var(--team-background-color);
+@media screen and (min-width:480px) {
   padding: 60px 0;
 } 
-}
-.team-section {
-  @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
     padding: 94px 0;
   }
 }
@@ -97,12 +94,10 @@ background-image: url(/img/hero.jpg);
 // Clients-section
 .clients-section {
 @media screen and (min-width:480px) {
-  padding: 60px 0 0;
+  padding: 60px 0;
 } 
-}
-.clients-section {
-  @media screen and (min-width:1200px) {
-    padding: 94px 0 0;
+@media screen and (min-width:1200px) {
+    padding: 94px 0;
   }
 }
 .clients-section__container {

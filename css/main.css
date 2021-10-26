@@ -875,7 +875,7 @@ summary {
 @media screen and (min-width: 480px) {
   .clients-list {
     list-style: none;
-    padding: 0 0 60px;
+    padding: 0;
     margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -955,12 +955,6 @@ summary {
   .clients-list__link:hover, .clients-list__link:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-list {
-    padding: 0 0 79px;
   }
 }
 
@@ -1862,13 +1856,13 @@ img {
 
 @media screen and (min-width: 480px) {
   .clients-section {
-    padding: 60px 0 0;
+    padding: 60px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients-section {
-    padding: 94px 0 0;
+    padding: 94px 0;
   }
 }
 

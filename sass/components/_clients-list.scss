@@ -4,7 +4,7 @@
 .clients-list {
   @media screen and (min-width: 480px) {
   list-style: none;
-  padding: 0 0 60px;
+  padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap; 
@@ -55,11 +55,7 @@
 }
 }
 // DESKTOP
-.clients-list {
-   @media screen and (min-width: 1200px) {
-  padding: 0 0 79px;
-   }
-}
+
 .clients-list__link {
   @media screen and (min-width: 1200px) {
   width: 170px;
