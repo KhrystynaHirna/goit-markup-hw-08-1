@@ -1,35 +1,59 @@
 // // Advantage-section 
 
-// MOBILE
 .advantage-list {
 @extend %list; 
 @media screen and (min-width: 480px) {
   padding: 0;
   text-align: center;
-  // padding-bottom: 60px;
 }  
-}
-.advantage-list {
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   flex-wrap: wrap;
   display: flex;
   margin: -15px;
   }
-}
-.advantage-list {
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   padding: 0;
   margin: 0;
   justify-content: space-between;
   align-items: center;
-  &__item {
-    margin-right: 0;
-    margin-top: 0;
-    padding: 0;
-  }
   }
 }
-
+.advantage-list__item {
+@media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px; 
+    }
+  }
+@media screen and (min-width: 768px) {
+  margin: 15px;
+}
+@media screen and (min-width: 1200px) {
+  // max-width: 270px;
+  padding: 0;
+  margin: 0;
+  align-items: baseline;
+  }
+}
+.advantage-list__icon {
+@media screen and (min-width: 480px) {
+  background-color: var(--team-background-color);
+  color: currentColor;
+  width: 450px;
+  height: 120px;
+  border-radius: 4px;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0;
+  margin-right: 0;
+  @include flex ($jc: center, $ai: center);
+  }
+@media screen and (min-width: 768px) {
+  width: 354px;
+  }
+@media screen and (min-width: 1200px) {
+  width: 270px;
+  }
+}
 .advantage-list__title {
 @media screen and (min-width: 480px) {
   font-size: 14px;
@@ -38,9 +62,12 @@
   text-transform: uppercase;
   margin: 0 0 10px;
 } 
+@media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 .advantage-list__text {
-  @media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   color: var(--paragraph-text-color);
   font-size: 14px;
   line-height: 1.7;
@@ -48,100 +75,14 @@
   margin: 0;
   text-align: start; 
   }
-}
-.advantage-list__item {
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px; 
-    }
-  }
-}
-.advantage-list__icon {
-  @media screen and (min-width: 480px) {
-  background-color: var(--team-background-color);
-  color: currentColor;
-  width: 450px;
-  height: 120px;
-  border-radius: 4px;
-  align-items: center;
-  
-  margin-bottom: 30px;
-  padding: 0;
-  margin-right: 0;
-  @include flex ($jc: center, $ai: center);
-  }
-}
-
-// TABLET
-
-.advantage-list__icon {
-  @media screen and (min-width: 768px) {
-  width: 354px;
-  height: 120px;
-  }
-}
-.advantage-list__title {
-  @media screen and (min-width: 768px) {
-    text-align: start;
-  }
-}
-.advantage-list__text {
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
    max-width: 354px;
 }
-}
-.advantage-list__item {
-@media screen and (min-width: 768px) {
-margin: 15px;
-}
-}
-
-// DESKTOP
-
-.advantage-list__item {
-  @media screen and (min-width: 1200px) {
-  // max-width: 270px;
-  padding: 0;
-  margin: 0;
-  align-items: baseline;
-  }
-}
-.advantage-list__title {
-  @media screen and (min-width: 1200px) {
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin: 0 0 10px;
-  }
-}
-.advantage-list__text {
-  @media screen and (min-width: 1200px) {
-  color: var(--paragraph-text-color);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-
-  margin-top: 0;
+@media screen and (min-width: 1200px) {
   max-width: 270px;
   }
 }
-.advantage-list__icon {
-  @media screen and (min-width: 1200px) {
-  background-color: var(--team-background-color);
-  color: currentColor;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  @include flex ($jc: center, $ai: center);
-  margin-bottom: 30px;
-  padding: 0;
-  }
-}
-.advantage-list__svg {
-  @media screen and (min-width: 1200px) {
-  @include flex ($jc: center);
-  text-align: center;
-  } 
-}
+
+
+
 
