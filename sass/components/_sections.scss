@@ -53,9 +53,11 @@ background-image: url(/img/hero.jpg);
     padding: 200px 0 200px;
   }
   }
-// Advantage-section
 .advantage-section {
-    padding-top: 60px; 
+    padding: 60px 0 60px;
+@media screen and (min-width:1200px) {
+  padding: 94px 0 94px;
+}
 }
 .advantage-section__container {
   @extend .container; 
@@ -66,11 +68,9 @@ background-image: url(/img/hero.jpg);
    @media screen and (max-width:1199px) {
    display: none;
 }
-}
-.product-section {
-   @media screen and (min-width:1200px) {
+  @media screen and (min-width:1200px) {
    margin: 0;
-   padding: 94px 0;
+   padding-bottom: 94px;
 }
 }
 .product-section__container {

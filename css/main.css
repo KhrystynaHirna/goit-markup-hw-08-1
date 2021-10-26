@@ -546,6 +546,35 @@ summary {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .advantage-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-list {
+    padding: 0;
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantage-list__item {
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .advantage-list__title {
     font-size: 14px;
@@ -596,20 +625,6 @@ summary {
   }
 }
 
-.advantage-list {
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .advantage-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .advantage-list__icon {
     width: 354px;
@@ -632,33 +647,6 @@ summary {
 @media screen and (min-width: 768px) {
   .advantage-list__item {
     margin: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .advantage-list {
-    margin: -15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantage-list {
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .advantage-list__item {
-    margin-right: 0;
-    margin-top: 0;
-    padding: 0;
   }
 }
 
@@ -1882,7 +1870,13 @@ img {
 }
 
 .advantage-section {
-  padding-top: 60px;
+  padding: 60px 0 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-section {
+    padding: 94px 0 94px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1894,7 +1888,7 @@ img {
 @media screen and (min-width: 1200px) {
   .product-section {
     margin: 0;
-    padding: 94px 0;
+    padding-bottom: 94px;
   }
 }
 
