@@ -18,6 +18,10 @@
   background-color: transparent;
   cursor: pointer;
   z-index: 999;
+  @include transition (fill);
+&:hover, &:focus {
+     border-color: var(--accent-color);
+  }
 @media screen and (min-width: 768px) {
   display: none;
   }

@@ -1816,6 +1816,14 @@ img {
   background-color: transparent;
   cursor: pointer;
   z-index: 999;
+  -webkit-transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
+  -webkit-transition-property: fill;
+  transition-property: fill;
+}
+
+.menu-button:hover, .menu-button:focus {
+  border-color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
