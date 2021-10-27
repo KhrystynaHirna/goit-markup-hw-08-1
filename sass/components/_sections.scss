@@ -1,48 +1,38 @@
 
 // Hero-section
 .main-section {
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(/img/hero-480px.jpg);
-    // background-size: 480px 400px;
-  }
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    .main-section {
-background-image: url(/img/hero-768px.jpg);
- }
-}
-@media screen and (min-device-pixel-ratio: 3),
-  screen and (min-resolution: 288dpi),
-  screen and (min-resolution: 3dppx) {
-    .main-section {
-background-image: url(/img/hero.jpg);
- }
-}
-    
-.main-section {
   background-color: var(--footor-background-color);
   background-size: 100%;
   color: var(--body-background-color);
   margin-top: 0;
   padding: 118px 0 118px;
   text-align: center;
-
   background-repeat: no-repeat;
   background-position: center;
- }
-
-.main-section {
-   @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
     padding: 200px 0 200px;
   }
-  }
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/img/hero-480px.jpg);
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  background-image: url(/img/hero-768px.jpg);
+}
+@media screen and (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+  background-image: url(/img/hero.jpg);
+ }
+}
 .advantage-section {
-    padding: 60px 0 60px;
+  padding: 60px 0 60px;
 @media screen and (min-width:1200px) {
   padding: 94px 0 94px;
 }
@@ -50,8 +40,6 @@ background-image: url(/img/hero.jpg);
 .advantage-section__container {
   @extend .container; 
 }
-// MOBILE + TABLET
-// Product-section
 .product-section {
    @media screen and (max-width:1199px) {
    display: none;
@@ -64,8 +52,6 @@ background-image: url(/img/hero.jpg);
 .product-section__container {
   @extend .container;
 }
-// Team-section
-
 .team-section {
   background-color: var(--team-background-color);
 @media screen and (min-width:480px) {
@@ -78,8 +64,6 @@ background-image: url(/img/hero.jpg);
 .team-section__container {
   @extend .container;
 }
-
-// Clients-section
 .clients-section {
 @media screen and (min-width:480px) {
   padding: 60px 0;
@@ -91,17 +75,14 @@ background-image: url(/img/hero.jpg);
 .clients-section__container {
   @extend .container;
 }
-
-// Portfolio-section
 .portfolio-section {
-  padding: 60px 0 0 0; 
+  padding: 60px 0 0 0;
+@media screen and (min-width:1200px) {
+  padding: 94px 0; 
+  } 
 }
 .portfolio-section__container {
   @extend .container;
 }
-.portfolio-section {
-  @media screen and (min-width:1200px) {
-    padding: 94px 0; 
-  } 
-}
+
 
