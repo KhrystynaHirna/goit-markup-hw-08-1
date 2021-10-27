@@ -1,88 +1,45 @@
-// Team-section
-// MOBILE
+
 .team-list {
   padding-left: 0;
   @extend %list;
-}
-
-// TABLET
-.team-list {
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   flex-wrap: wrap;
   display: flex;
   margin: -15px;
   }
-}
-// TABLET
-.team-list__card {
-   @media screen and (min-width: 768px) {
-  width: 354px;
-  height: 536px;
-  margin: 15px;   
-}
-}
-.team-list__image {
-  @media screen and (min-width: 768px) {
+@media screen and (min-width:1200px) {
+  padding-left: 0;
   }
+}
+.team-list__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-list__card {
   text-align: center;
   box-shadow: var(--team-card-shadow);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--body-background-color);
- @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   &:not(:last-child) {
   margin-bottom: 30px;
  }
  }
-  } 
-.team-list__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  margin-top: 30px;
-  margin-bottom: 10px;
+@media screen and (min-width: 768px) {
+  width: 354px;
+  height: 536px;
+  margin: 15px;   
 }
-.team-list__specialty {
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: var(--paragraph-text-color);
-
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-// DESKTOP
-.team-list {
-  @media screen and (min-width:1200px) {
-  padding-left: 0;
-  }
-  @extend %list;
-}
-.team-list__card {
-  @media screen and (min-width:1200px) {
-  text-align: center;
-  box-shadow: var(--team-card-shadow);
-  border-radius: 0px 0px 4px 4px;
+@media screen and (min-width:1200px) {
   width: 270px;
   height: 428px;
   }
- 
-}
-.team-list__name {
-   @media screen and (min-width:1200px) {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-
-  margin-top: 30px;
-  margin-bottom: 10px;
-   }
-}
+} 
 .team-list__specialty {
-  @media screen and (min-width:1200px) {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -90,5 +47,4 @@
 
   margin-top: 0;
   margin-bottom: 16px;
-  }
 }
