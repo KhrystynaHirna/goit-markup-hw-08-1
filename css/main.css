@@ -1912,18 +1912,16 @@ img {
   display: none;
 }
 
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
 .menu-button .icon-burger {
   display: block;
 }
 
-.menu-button.is-open .icon-cross {
-  display: block;
-  z-index: 2;
-}
-
 .menu-button.is-open .icon-burger {
   display: none;
-  z-index: 3;
 }
 
 .menu-container.is-open {
@@ -1989,10 +1987,8 @@ img {
 
 .mobile-info__list {
   list-style: none;
-  padding-top: 302px;
-  padding-left: 40px;
-  padding-bottom: 64px;
   margin: 0;
+  padding: 302px 0 64px 40px;
 }
 
 .mobile-info__link {
@@ -2001,7 +1997,7 @@ img {
   font-weight: 500;
   line-height: 1.166;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--paragraph-text-color);
 }
 
 .mobile-info__item:not(:last-child) {
