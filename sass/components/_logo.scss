@@ -1,4 +1,4 @@
-// // Logo
+
 .logo {
   margin: 0;
   color: var(--accent-color);
@@ -12,29 +12,17 @@
    color: var(--accent-color);   
   }
   @extend %link;
-
   &--black {
   color: var(--logo-black-color);
   display: inline-block;
   }
-
   &--white {
   color: var(--body-background-color);
   text-align: center;
  }
-}
-.logo > .logo--white {
-    margin-bottom: 20px;
-  }
-// DESKTOP
-.logo {
 @media screen and (min-width: 1200px) {
   font-size: 26px;
   line-height: 1.19;
-   &--white {
-  color: var(--body-background-color);
-  display: inline-block;
-  margin-bottom: 20px;
- }
+ } 
 }
-}
+

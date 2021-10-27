@@ -523,19 +523,10 @@ summary {
   text-align: center;
 }
 
-.logo > .logo--white {
-  margin-bottom: 20px;
-}
-
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
-  }
-  .logo--white {
-    color: var(--body-background-color);
-    display: inline-block;
-    margin-bottom: 20px;
   }
 }
 
@@ -1042,12 +1033,7 @@ summary {
   line-height: 1.7;
   letter-spacing: 0.03em;
   padding-left: 0;
-}
-
-@media screen and (max-width: 1199px) {
-  .address__list {
-    padding-top: 20px;
-  }
+  padding-top: 20px;
 }
 
 .address__item:not(:last-child) {

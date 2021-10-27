@@ -1,4 +1,4 @@
-// Footer-section
+
 .footer {
   background-color: var(--footor-background-color);
   padding: 60px 0;
@@ -69,9 +69,7 @@
   letter-spacing: 0.03em;
   padding-left: 0;
   @extend %list;
-@media screen and (max-width: 1199px) {
   padding-top: 20px;
-  }
 }
 .address__item:not(:last-child) {
   margin-bottom: 8px;
