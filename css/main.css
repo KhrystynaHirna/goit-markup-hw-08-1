@@ -1826,15 +1826,15 @@ img {
 }
 
 .menu-button__svg {
-  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
   -webkit-transition: 250ms var(--timing-function);
   transition: 250ms var(--timing-function);
-  -webkit-transition-property: color;
-  transition-property: color;
+  -webkit-transition-property: fill;
+  transition-property: fill;
 }
 
 .menu-button__svg:hover, .menu-button__svg:focus {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .menu-button .icon-cross {
