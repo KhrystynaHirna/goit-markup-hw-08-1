@@ -24,10 +24,10 @@
   }
 }
 .menu-button__svg {
-  color: var( --primary-text-color);
+  fill: var( --primary-text-color);
   @include transition (color);
 &:hover, &:focus {
-  color: var(--accent-color);
+  fill: var(--accent-color);
   }
 }
 .menu-button .icon-cross {
