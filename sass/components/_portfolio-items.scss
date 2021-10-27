@@ -95,7 +95,6 @@
 .portfolio__item-link {
   text-decoration: none;
   display: block;
-
   @include transition (transform);
   @include transition (opacity);
   @include transition (box-shadow);
@@ -112,10 +111,8 @@
 .portfolio__item-thumb {
   position: relative;
   overflow: hidden;
-  
-  @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
   width: 370px;
-  // height: 294px;
   }
 }
 .overlay {
@@ -130,22 +127,16 @@
   );
   opacity: 0;
   @include transition (transform);
-    @media screen and (max-width:767px) {
+@media screen and (max-width:767px) {
     padding: 77px 24px;
-}
-}
-.overlay {
-  @media screen and (min-width:768px) {
+ }
+@media screen and (min-width:768px) {
     max-width: 354px;
     padding: 24px;
     height: 100%;
   }
-}
-.overlay {
-  @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
     max-width: 370px;
-    padding: 24px;
-    height: 100%;
   }
 }
 .overlay__text {

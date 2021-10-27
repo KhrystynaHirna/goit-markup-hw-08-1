@@ -1586,8 +1586,6 @@ summary {
 @media screen and (min-width: 1200px) {
   .overlay {
     max-width: 370px;
-    padding: 24px;
-    height: 100%;
   }
 }
 
