@@ -1816,10 +1816,11 @@ img {
   background-color: transparent;
   cursor: pointer;
   z-index: 999;
+  border-color: transparent;
   -webkit-transition: 250ms var(--timing-function);
   transition: 250ms var(--timing-function);
-  -webkit-transition-property: fill;
-  transition-property: fill;
+  -webkit-transition-property: color;
+  transition-property: color;
 }
 
 .menu-button:hover, .menu-button:focus {
