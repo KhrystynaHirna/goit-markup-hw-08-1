@@ -855,11 +855,6 @@ summary {
   background-color: var(--icon-background-color);
 }
 
-.social-icons__link--with-background {
-  fill: var(--body-background-color);
-  background-color: var(--icon-background-color);
-}
-
 @media screen and (min-width: 480px) {
   .clients-list {
     list-style: none;
@@ -1062,6 +1057,25 @@ summary {
   color: var(--footer-info-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .subscribe-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    padding: 0;
+    margin-right: auto;
+  }
+}
+
 .subscribe-form .primary-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1075,31 +1089,6 @@ summary {
 @media screen and (min-width: 1200px) {
   .subscribe-form .primary-button {
     margin-left: 12px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .subscribe-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .subscribe-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0;
-    margin-right: auto;
   }
 }
 
@@ -1127,25 +1116,19 @@ summary {
   transition: 250ms var(--timing-function);
   -webkit-transition-property: border-color;
   transition-property: border-color;
-}
-
-.subscribe-form__input:hover, .subscribe-form__input:focus {
-  border-color: var(--accent-color);
-}
-
-@media screen and (max-width: 1199px) {
-  .subscribe-form__input {
-    width: 450px;
-    height: 50px;
-  }
+  width: 450px;
+  height: 50px;
 }
 
 @media screen and (min-width: 1200px) {
   .subscribe-form__input {
     width: 358px;
-    height: 50px;
     margin-bottom: 0;
   }
+}
+
+.subscribe-form__input:hover, .subscribe-form__input:focus {
+  border-color: var(--accent-color);
 }
 
 .subscribe-form__text {

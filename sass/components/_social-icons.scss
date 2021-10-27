@@ -1,17 +1,15 @@
-
-//  social-icons 
+ 
 .social-icons {
   padding: 0 122px 24px;
-
   list-style: none;
   @include flex ($jc:center, $ai:center);
-  &--footer {
+&--footer {
   margin: 0;
   padding: 0;
  }
 }
 .social-icons__item {
-  &:not(:last-child) {
+&:not(:last-child) {
   margin-right: 10px;
   }
 }
@@ -24,21 +22,16 @@
   @include transition (fill);
   @include transition (background-color);
 
-  &:hover, &:focus {
+&:hover, &:focus {
   background-color: var(--accent-color);
   fill: var(--body-background-color);
   }
 }
 .social-icons__link--fill {
   fill: var(--icon-color);
-  &:hover, &:focus {
+&:hover, &:focus {
   fill: var(--body-background-color);
  }
-}
-
-.social-icons__link--with-background {
-  fill: var(--body-background-color);
-  background-color: var(--icon-background-color);
 }
 .social-icons__link--with-background {
   fill: var(--body-background-color);
