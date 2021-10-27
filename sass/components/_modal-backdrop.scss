@@ -1,4 +1,4 @@
-// Modal-backdrop
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -9,7 +9,6 @@
   @include transition (opacity);
    z-index: 1000;
 }
-
 .modal {
   width: 450px;
   position: absolute;
@@ -35,9 +34,7 @@
   align-items: center;
   justify-content: center;
   }
-}
-.modal {
-  @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
   width: 528px;
   }
 }

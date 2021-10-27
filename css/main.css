@@ -297,6 +297,12 @@ summary {
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding: 0;
+  }
+}
+
 .page-header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,13 +310,6 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header {
-    border-bottom: var(--header-border-color);
-    padding: 0;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -326,11 +325,23 @@ summary {
     line-height: 1.1;
     letter-spacing: 0.02em;
     padding: 0;
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 0 0 auto;
     text-decoration: none;
     list-style: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -343,6 +354,20 @@ summary {
   }
   .header-info__item:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-info__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-info__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -370,34 +395,6 @@ summary {
   .header-info__icon {
     fill: currentColor;
     margin-right: 8px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header-info__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header-info__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 

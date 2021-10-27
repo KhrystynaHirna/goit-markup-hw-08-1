@@ -1,91 +1,75 @@
-// header-block
-// MOBILE
+
 .page-header {
   @include border ($use-bb:(var(--header-border-color)));
   padding-top: 16px;
   padding-bottom: 16px;
   position: relative;
+@media screen and (min-width: 768px) {
+  padding: 0;
+  } 
 }
 .page-header__container {
   @extend .container;
   display: flex;
   align-items: center;
 } 
-// TABLET
- .page-header {
-  @media screen and (min-width: 768px) {
-  @include border ($use-bb:(var(--header-border-color)));
-  padding: 0;
-  } 
-}
-// header-info block
 .header-info {
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     display: none;
   }
-}
-.header-info {
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
 
   padding: 0;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 0 0 auto;
   text-decoration: none;
   list-style: none;
-  } 
+  }
+@media screen and (min-width: 1200px) {
+  @include flex ($ai: center);
+  align-items: baseline;
+ } 
 }
 .header-info__item {
-  @media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
     color: var(--paragraph-text-color);
   &:hover, &:focus {
     color: var(--accent-color);  
-  }
+   }
   &:not(:last-child) {
     margin-bottom: 10px;
+   }
   }
-  }
+@media screen and (min-width: 1200px) {
+  @include flex ($ai: center);
+  &:not(:last-child) {
+    margin-right: 30px;
+   }
+ }
 }
 .header-info__link {
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   color: var(--paragraph-text-color);
   @include flex ($ai: center);
   @include transition (color);
   text-decoration: none;
   &:hover, &:focus {
   color: var(--accent-color);  
-  }
+   }
   }
 }
 .header-info__icon {
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   fill: currentColor;
   margin-right: 8px;
   }
-}
-// DESKTOP
-.header-info {
-  @media screen and (min-width: 1200px) {
-  @include flex ($ai: center);
-  align-items: baseline;
-}
-}
-.header-info__item {
-  @media screen and (min-width: 1200px) {
-  @include flex ($ai: center);
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-  }
-}
-.header-info__icon {
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   margin-right: 10px;
   }
 }
+
 
 
