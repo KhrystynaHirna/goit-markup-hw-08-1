@@ -1,104 +1,73 @@
-// Portfolio
-// MOBILE
+
 .portfolio-filter {
    @extend %list;
-   @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
     max-width: 480px;
     padding: 0;
 }
+@media screen and (min-width:768px) {
+    @include flex ($jc: center);
+    padding: 0;
+  }
 }
 .portfolio-filter__item {
 @media screen and (max-width:767px) {
  margin-bottom: 15px;
-}   
+ }   
 }
-// TABLET
-.portfolio-filter {
-  @media screen and (min-width:768px) {
-    display: flex;
-    justify-content: center;
-    padding-left: 0;
-  }
-}
-// DESKTOP
-.portfolio-filter {
-  @media screen and (min-width:1200px) {
-  @include flex ($jc: center);
-  padding: 0;
-  }
-  @extend %list;
-}
-.portfolio-filter__item {
- &:not(:last-child) {
+.portfolio-filter__item:not(:last-child) {
    margin-right: 8px;
  }
-}
-
 .portfolio-list {
-  padding-right: 0;
-  padding-left: 0;
+  padding: 40px 0 60px;
   margin: 0;
   list-style: none;
-  padding-bottom: 60px;
-
-  @media screen and (max-width: 767px) {
-    padding-top: 40px;
-  }
-  @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
   padding-top: 30px; 
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
    }
-  @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
   padding-top: 50px;
   padding-bottom: 0;
+ }
 }
-}
-// MOBILE
 .portfolio__item:not(:last-child) {
-  @media screen and (max-width:767px) {
+@media screen and (max-width:767px) {
     margin-bottom: 30px;
   }
 }
 .portfolio__item {
-  @media screen and (max-width:767px) {
+@media screen and (max-width:767px) {
     margin: 0;
   }
-}
-.portfolio__item {
-  @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
     margin: 15px;
     width: 354px;
-    // height: auto;
   }
-  @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
     width: 370px;
   }
 }
 .portfolio__item-description {
   border: var(--card-border-color);
   @include border ($use-bt: none);
-  @media screen and (max-width:767px) {
+@media screen and (max-width:767px) {
   max-width: 450px;
   }
-}
-.portfolio__item-description {
-   @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
    max-width: 354px;
     .list-item:first-child {
      max-height: 146px;
+    }
    }
-   }
-}
-.portfolio__item-description {
-   @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
    max-width: 370px;
    }
 }
-// general
 .portfolio__item-name {
   font-size: 18px;
   line-height: 2;
