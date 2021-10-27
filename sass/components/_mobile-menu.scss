@@ -19,12 +19,15 @@
   cursor: pointer;
   z-index: 999;
   border-color: transparent;
-  @include transition (color);
-&:hover, &:focus {
-     border-color: var(--accent-color);
-  }
 @media screen and (min-width: 768px) {
   display: none;
+  }
+}
+.menu-button__svg {
+  color: var( --primary-text-color);
+  @include transition (color);
+&:hover, &:focus {
+  color: var(--accent-color);
   }
 }
 .menu-button .icon-cross {

@@ -1817,20 +1817,24 @@ img {
   cursor: pointer;
   z-index: 999;
   border-color: transparent;
-  -webkit-transition: 250ms var(--timing-function);
-  transition: 250ms var(--timing-function);
-  -webkit-transition-property: color;
-  transition-property: color;
-}
-
-.menu-button:hover, .menu-button:focus {
-  border-color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
+}
+
+.menu-button__svg {
+  color: var(--primary-text-color);
+  -webkit-transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+.menu-button__svg:hover, .menu-button__svg:focus {
+  color: var(--accent-color);
 }
 
 .menu-button .icon-cross {
