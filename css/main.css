@@ -1171,6 +1171,7 @@ summary {
   transition: 250ms var(--timing-function);
   -webkit-transition-property: opacity;
   transition-property: opacity;
+  z-index: 1000;
 }
 
 .modal {
