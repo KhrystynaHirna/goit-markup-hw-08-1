@@ -18,7 +18,7 @@
   background-color: transparent;
   cursor: pointer;
   z-index: 999;
-  @include transition (fill);
+  @include transition (color);
 &:hover, &:focus {
      border-color: var(--accent-color);
   }
