@@ -6,8 +6,11 @@
   width: 100%;
   height: 100vh;
   z-index: 998;
+  position: fixed;
+  display: flex;
+  padding: 48px 40px;
   @include transition (opacity);
-
+  
   &.is-open {
   display: block;
   }
@@ -20,8 +23,6 @@
   cursor: pointer;
   z-index: 999;
   border-color: transparent;
-  // align-items: center;
-  // justify-content: center;
 @media screen and (min-width: 768px) {
   display: none;
   }
@@ -50,22 +51,32 @@ display: none;
   visibility: visible;
   pointer-events: initial;
 }
- .mobile__list{
+.menu-container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  justify-content: space-between;
+}
+ .mobile__list {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  // justify-content: space-between;
  }
+//  .mobile__list > .mobile__item-second {
+//   align-self: flex-end;
+// }
 .mobile-navigation__list {
-  list-style: none;
+ list-style: none;
+ padding: 0;
     @media screen and (max-width: 767px) {
  font-weight: 500;
  font-size: 40px;
  line-height: 1.175;
  letter-spacing: 0.02em;
  list-style: none;
- padding-left: 40px;
- padding-top: 48px;
+//  padding-left: 40px;
+//  padding-top: 48px;
  margin: 0;
  text-align: start;
  }
@@ -88,7 +99,8 @@ display: none;
 .mobile-info__list {
   list-style: none;
   margin: 0;
-  padding: 302px 0 64px 40px;
+  padding: 0;
+  // padding: 302px 0 64px 40px;
 }
 .mobile-info__link {
   text-decoration: none;
@@ -111,8 +123,10 @@ display: none;
 .mobile-social__list {
   list-style: none;
   display: flex;
-  padding-bottom: 48px;
+  // padding-bottom: 48px;
   margin: 0;
+  padding: 0;
+  margin-top: 64px;
 }
 .mobile-social__link {
   text-decoration: none;
@@ -121,9 +135,12 @@ display: none;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  padding-right: 10px;
+  // padding-right: 10px;
 }
 .mobile-social__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  margin-right: 10px;
+  padding-right: 10px;
+}
+.mobile-social__item:not(:first-child) {
+  padding-left: 10px;
 }
