@@ -1391,12 +1391,6 @@ summary {
 }
 
 @media screen and (max-width: 767px) {
-  .portfolio__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .portfolio__item {
     margin: 0;
   }
@@ -1412,6 +1406,12 @@ summary {
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     width: 370px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1524,6 +1524,9 @@ summary {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  transition: 250ms var(--timing-function);
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
 }
 
 @media screen and (max-width: 767px) {

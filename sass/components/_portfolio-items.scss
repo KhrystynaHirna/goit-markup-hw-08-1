@@ -35,11 +35,6 @@
   padding-bottom: 0;
  }
 }
-.portfolio__item:not(:last-child) {
-@media screen and (max-width:767px) {
-    margin-bottom: 30px;
-  }
-}
 .portfolio__item {
 @media screen and (max-width:767px) {
     margin: 0;
@@ -50,6 +45,11 @@
   }
 @media screen and (min-width:1200px) {
     width: 370px;
+  }
+}
+.portfolio__item:not(:last-child) {
+@media screen and (max-width:767px) {
+    margin-bottom: 30px;
   }
 }
 .portfolio__item-description {
@@ -127,6 +127,7 @@
   );
   opacity: 0;
   @include transition (transform);
+  @include transition (opacity);
 @media screen and (max-width:767px) {
     padding: 77px 24px;
  }
