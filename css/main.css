@@ -1571,23 +1571,24 @@ body {
 .container, .page-header__container, .footer__container, .advantage-section__container, .product-section__container, .team-section__container, .clients-section__container, .portfolio-section__container {
   padding: 0 15px;
   margin: 0 auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {
   .container, .page-header__container, .footer__container, .advantage-section__container, .product-section__container, .team-section__container, .clients-section__container, .portfolio-section__container {
-    min-width: 480px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container, .page-header__container, .footer__container, .advantage-section__container, .product-section__container, .team-section__container, .clients-section__container, .portfolio-section__container {
-    min-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container, .page-header__container, .footer__container, .advantage-section__container, .product-section__container, .team-section__container, .clients-section__container, .portfolio-section__container {
-    min-width: 1200px;
+    width: 1200px;
   }
 }
 
