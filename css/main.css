@@ -513,6 +513,9 @@ summary {
 .logo--black {
   color: var(--logo-black-color);
   display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo--white {
@@ -1817,6 +1820,9 @@ img {
   cursor: pointer;
   z-index: 999;
   border-color: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 768px) {
