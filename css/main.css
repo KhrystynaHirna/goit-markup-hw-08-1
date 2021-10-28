@@ -513,9 +513,6 @@ summary {
 .logo--black {
   color: var(--logo-black-color);
   display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .logo--white {
@@ -1804,6 +1801,10 @@ img {
   width: 100%;
   height: 100vh;
   z-index: 998;
+  -webkit-transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
 }
 
 .menu-container.is-open {
@@ -1820,12 +1821,6 @@ img {
   cursor: pointer;
   z-index: 999;
   border-color: transparent;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
