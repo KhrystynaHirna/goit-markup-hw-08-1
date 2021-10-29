@@ -99,10 +99,13 @@
             <a href="" class="portfolio__item-link">
               <div class="portfolio__item-thumb">
                 <picture>
-                  <source srcset="./img/techno-480px.jpg 450w" media="min-width: 480px)" sizes="(min-width: 450px) 450px, 100vw">
-                  <source srcset="./img/techno-768px.jpg 354w" media="min-width: 768px)" sizes="(min-width: 354px) 354px, 100vw">
-                  <source srcset="./img/techno.jpg 370w" media="min-width: 1200px)" sizes="(min-width: 370px) 370px, 100vw">
-                  <img src="./img/techno.jpg"" alt="открытый ноутбук, на экране которого изображен сайт" width="450" height="294">
+                  <source 
+                  srcset="./img/techno-480px.jpg 1x, ./img/techno-768px.jpg 2x" 
+                  media="max-width: 767px)">
+                  <source 
+                  srcset="./img/techno-480px.jpg 1x, ./img/techno-768px.jpg 2x" 
+                  media="min-width: 1199px)">
+                  <img src="./img/techno.jpg" alt="открытый ноутбук, на экране которого изображен сайт" width="450" height="294">
                 </picture>
                 <div class="overlay">
                   <p class="overlay__text">
@@ -121,9 +124,11 @@
           <li class="portfolio__item">
             <a href="" class="portfolio__item-link">
               <div class="portfolio__item-thumb">
-                <img srcset="./img/poster-480px.jpg 1x, ./img/poster-768px.jpg 2x" src="./img/poster.jpg"
-                  alt="постер, на котором два человека в спортивной форме борются за баскетбольный мяч" width="450"
-                  height="294">
+                <picture>
+                  <source srcset="./img/poster-480px.jpg 1x, ./img/poster-768px.jpg 2x" media="max-width: 767px)">
+                  <source srcset="./img/poster-480px.jpg 1x, ./img/poster-768px.jpg 2x" media="min-width: 1199px)">
+                  <img src="./img/poster.jpg" alt="постер, на котором два человека в спортивной форме борются за баскетбольный мяч" width="450" height="294">
+                </picture>
                 <div class="overlay">
                   <p class="overlay__text">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -141,8 +146,11 @@
           <li class="portfolio__item">
             <a href="" class="portfolio__item-link">
               <div class="portfolio__item-thumb">
-                <img srcset="./img/restaurant-480px.jpg 1x, ./img/restaurant-768px.jpg 2x" src="./img/restaurant.jpg"
-                  alt="логотип ресторана морской пищи в форме надписи на фоне рыбы" width="450" height="294">
+                  <picture>
+                    <source srcset="./img/restaurant-480px.jpg 1x, ./img/restaurant-768px.jpg 2x" media="max-width: 767px)">
+                    <source srcset="./img/restaurant-480px.jpg 1x, ./img/restaurant-768px.jpg 2x" media="min-width: 1199px)">
+                    <img src="./img/restaurant.jpg" alt="логотип ресторана морской пищи в форме надписи на фоне рыбы" width="450" height="294">
+                  </picture>
                 <div class="overlay">
                   <p class="overlay__text">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -160,8 +168,11 @@
           <li class="portfolio__item">
             <a href="" class="portfolio__item-link">
               <div class="portfolio__item-thumb">
-                <img srcset="./img/headset-480px.jpg 1x, ./img/headset-768px.jpg 2x" src="./img/headset.jpg"
-                  alt="большие черные наушники" width="450" height="294">
+                <picture>
+                  <source srcset="./img/headset-480px.jpg 1x, ./img/headset-768px.jpg 2x" media="max-width: 767px)">
+                  <source srcset="./img/headset-480px.jpg 1x, ./img/headset-768px.jpg 2x" media="min-width: 1199px)">
+                  <img src="./img/headset.jpg" alt="большие черные наушники" width="450" height="294">
+                </picture>
                 <div class="overlay">
                   <p class="overlay__text">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -179,8 +190,11 @@
           <li class="portfolio__item">
             <a href="" class="portfolio__item-link">
               <div class="portfolio__item-thumb">
-                <img srcset="./img/boxes-480px.jpg 1x, ./img/boxes-768px.jpg 2x" src="./img/boxes.jpg"
-                  alt="две коробки, одна большая в белом цвете, вторая меньше коричневая" width="450" height="294">
+                <picture>
+                  <source srcset="./img/boxes-480px.jpg 1x, ./img/boxes-768px.jpg 2x" media="max-width: 767px)">
+                  <source srcset="./img/boxes-480px.jpg 1x, ./img/boxes-768px.jpg 2x" media="min-width: 1199px)">
+                  <img src="./img/boxes.jpg" alt="две коробки, одна большая в белом цвете, вторая меньше коричневая" width="450" height="294">
+                </picture>
                 <div class="overlay">
                   <p class="overlay__text">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -198,9 +212,11 @@
           <li class="portfolio__item">
             <a href="" class="portfolio__item-link">
               <div class="portfolio__item-thumb">
-                <img srcset="./img/web-computer-480px.jpg 1x, ./img/web-computer-768px.jpg 2x"
-                  src="./img/web-computer.jpg" alt="монитор компьютера, на котором запечатлен сайт на темном фоне"
-                  width="450" height="294">
+                <picture>
+                  <source srcset="./img/web-computer-480px.jpg 1x, ./img/web-computer-768px.jpg 2x" media="max-width: 767px)">
+                  <source srcset="./img/web-computer-480px.jpg 1x, ./img/web-computer-768px.jpg 2x" media="min-width: 1199px)">
+                  <img src="./img/web-computer.jpg" alt="монитор компьютера, на котором запечатлен сайт на темном фоне" width="450" height="294">
+                </picture>
                 <div class="overlay">
                   <p class="overlay__text">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -218,8 +234,11 @@
           <li class="portfolio__item">
             <a href="" class="portfolio__item-link">
               <div class="portfolio__item-thumb">
-                <img srcset="./img/book-480px.jpg 1x, ./img/book-768px.jpg 2x" src="./img/book.jpg"
-                  alt="книга, иллюстрированная картинками и текстом" width="450" height="294">
+                <picture>
+                  <source srcset="./img/book-480px.jpg 1x, ./img/book-768px.jpg 2x" media="max-width: 767px)">
+                  <source srcset="./img/book-480px.jpg 1x, ./img/book-768px.jpg 2x" media="min-width: 1199px)">
+                  <img src="./img/book.jpg" alt="книга, иллюстрированная картинками и текстом" width="450" height="294">
+                </picture>
                 <div class="overlay">
                   <p class="overlay__text">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -237,8 +256,11 @@
           <li class="portfolio__item">
             <a href="" class="portfolio__item-link">
               <div class="portfolio__item-thumb">
-                <img srcset="./img/label-480px.jpg 1x, ./img/label-768px.jpg 2x" src="./img/label.jpg"
-                  alt="белый брелок с надписью" width="450" height="294">
+                <picture>
+                  <source srcset="./img/label-480px.jpg 1x, ./img/label-768px.jpg 2x" media="max-width: 767px)">
+                  <source srcset="./img/label-480px.jpg 1x, ./img/label-768px.jpg 2x" media="min-width: 1199px)">
+                  <img src="./img/label.jpg" alt="белый брелок с надписью" width="450" height="294">
+                </picture>
                 <div class="overlay">
                   <p class="overlay__text">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
@@ -256,8 +278,11 @@
           <li class="portfolio__item">
             <a href="" class="portfolio__item-link">
               <div class="portfolio__item-thumb">
-                <img srcset="./img/laptop-480px.jpg 1x, ./img/laptop-768px.jpg 2x" src="./img/laptop.jpg"
-                  alt="открытый ноутбук, на котором человеческие руки печатают" width="450" height="294">
+                  <picture>
+                    <source srcset="./img/laptop-480px.jpg 1x, ./img/laptop-768px.jpg 2x" media="max-width: 767px)">
+                    <source srcset="./img/laptop-480px.jpg 1x, ./img/laptop-768px.jpg 2x" media="min-width: 1199px)">
+                    <img src="./img/laptop.jpg" alt="открытый ноутбук, на котором человеческие руки печатают" width="450" height="294">
+                  </picture>
                 <div class="overlay">
                   <p class="overlay__text">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
