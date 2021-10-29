@@ -2048,6 +2048,8 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 64px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile-social__link {
