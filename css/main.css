@@ -324,7 +324,7 @@ summary {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    padding: 0;
+    padding: 21px 0;
     margin: 0 0 0 auto;
     text-decoration: none;
     list-style: none;
@@ -489,7 +489,7 @@ summary {
     background: var(--accent-color);
     border-radius: 2px;
     position: absolute;
-    bottom: -1px;
+    bottom: -3px;
   }
 }
 
@@ -513,6 +513,9 @@ summary {
 .logo--black {
   color: var(--logo-black-color);
   display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo--white {
