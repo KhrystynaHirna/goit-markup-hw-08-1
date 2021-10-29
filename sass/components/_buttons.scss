@@ -44,8 +44,27 @@
   box-shadow: var(--secondary-button-shadow); 
   }
 }
-// Modal button
+.secondary-button--current {
+  background: var(--accent-color);
+  color: var(--body-background-color);
 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  min-width: 73px;
+  border-radius: 4px;
+  border: transparent;
+
+  padding: 6px 22px;
+  margin-top: 0;
+  cursor: pointer;
+  @include transition (all);
+}
+
+// Modal button
 .close-button {
   fill: var(--logo-black-color);
   width: 30px;

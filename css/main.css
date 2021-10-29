@@ -1777,6 +1777,26 @@ img {
           box-shadow: var(--secondary-button-shadow);
 }
 
+.secondary-button--current {
+  background: var(--accent-color);
+  color: var(--body-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  min-width: 73px;
+  border-radius: 4px;
+  border: transparent;
+  padding: 6px 22px;
+  margin-top: 0;
+  cursor: pointer;
+  -webkit-transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
 .close-button {
   fill: var(--logo-black-color);
   width: 30px;

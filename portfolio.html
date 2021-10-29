@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width initial-scale=1.0" />
-  <title>Отзывчивая верстка</title>
   <meta name="description" content="Эффективные решения для вашего бизнеса" />
   <title>Web Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,7 +87,7 @@
     <section class="portfolio-section">
       <div class="portfolio-section__container">
         <ul class="portfolio-filter">
-          <li class="portfolio-filter__item"><button type="button" class="secondary-button">Все</button></li>
+          <li class="portfolio-filter__item"><button type="button" class="secondary-button--current">Все</button></li>
           <li class="portfolio-filter__item"><button type="button" class="secondary-button">Веб-сайты</button></li>
           <li class="portfolio-filter__item"><button type="button" class="secondary-button">Приложения</button></li>
           <li class="portfolio-filter__item"><button type="button" class="secondary-button">Дизайн</button></li>
@@ -99,8 +98,12 @@
           <li class="portfolio__item">
             <a href="" class="portfolio__item-link">
               <div class="portfolio__item-thumb">
-                <img srcset="./img/techno-480px.jpg 1x, ./img/techno-768px.jpg 2x" src="./img/techno.jpg"
-                  alt="открытый ноутбук, на экране которого изображен сайт" width="450" height="294">
+                <picture>
+                  <source srcset="./img/techno-480px.jpg 450w" media="min-width: 480px)" sizes="(min-width: 450px) 450px, 100vw">
+                  <source srcset="./img/techno-768px.jpg 354w" media="min-width: 768px)" sizes="(min-width: 354px) 354px, 100vw">
+                  <source srcset="./img/techno.jpg 370w" media="min-width: 1200px)" sizes="(min-width: 370px) 370px, 100vw">
+                  <img src="./img/techno.jpg"" alt="открытый ноутбук, на экране которого изображен сайт" width="450" height="294">
+                </picture>
                 <div class="overlay">
                   <p class="overlay__text">
                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
