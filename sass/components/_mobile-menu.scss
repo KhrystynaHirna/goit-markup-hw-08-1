@@ -39,13 +39,13 @@
 .menu-button.is-open .icon-cross {
 display: block;
 }
-.icon-cross {
+.menu-button__svg .icon-cross {
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: contain;
 }
-.icon-burger {
+.menu-button__svg .icon-burger {
   display: flex;
   justify-content: center;
   align-items: center;

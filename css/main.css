@@ -1896,7 +1896,7 @@ img {
   display: block;
 }
 
-.icon-cross {
+.menu-button__svg .icon-cross {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1909,7 +1909,7 @@ img {
   background-size: contain;
 }
 
-.icon-burger {
+.menu-button__svg .icon-burger {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
