@@ -1883,12 +1883,16 @@ img {
   transition: 250ms var(--timing-function);
   -webkit-transition-property: fill;
   transition-property: fill;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-size: contain;
 }
 
 .menu-button__svg:hover, .menu-button__svg:focus {
@@ -1953,6 +1957,7 @@ img {
 .mobile-navigation__link {
   text-decoration: none;
   color: var(--primary-text-color);
+  font-size: 40px;
   -webkit-transition: 250ms var(--timing-function);
   transition: 250ms var(--timing-function);
   -webkit-transition-property: color;
@@ -1963,9 +1968,22 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-navigation__link {
+    font-size: 20px;
+  }
+}
+
 .mobile-navigation__link--current {
   color: var(--accent-color);
   text-decoration: none;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-navigation__link--current {
+    font-size: 20px;
+  }
 }
 
 .mobile-info__list {
@@ -1983,6 +2001,12 @@ img {
   color: var(--paragraph-text-color);
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-info__link {
+    font-size: 20px;
+  }
+}
+
 .mobile-info__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -1992,7 +2016,7 @@ img {
   font-size: 34px;
   line-height: 1.176;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 .mobile-social__list {

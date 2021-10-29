@@ -30,6 +30,7 @@
 .menu-button__svg {
   fill: var( --primary-text-color);
   @include transition (fill);
+  display: flex;
   justify-content: center;
   align-items: center;
   background-size: contain;
