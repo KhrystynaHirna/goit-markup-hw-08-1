@@ -128,17 +128,7 @@
   opacity: 0;
   @include transition (transform);
   @include transition (opacity);
-@media screen and (max-width:767px) {
-    padding: 77px 24px;
- }
-@media screen and (min-width:768px) {
-    max-width: 354px;
-    padding: 24px;
-    height: 100%;
-  }
-@media screen and (min-width:1200px) {
-    max-width: 370px;
-  }
+
 }
 .overlay__text {
     margin: 0;
@@ -147,7 +137,16 @@
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
-    color: var(--body-background-color);
-    height: 100%;
     align-content: center;
+@media screen and (max-width:767px) {
+    padding: 77px 24px;
+ }
+@media screen and (min-width:768px) {
+    max-width: 354px;
+    padding: 49px 24px;
+  }
+@media screen and (min-width:1200px) {
+    max-width: 370px;
+    padding: 63px 24px;
+  }
 }
