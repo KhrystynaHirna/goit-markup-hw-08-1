@@ -18,7 +18,6 @@
 .menu-button {
   display: inline-flex;
   margin-left: auto;
-  // padding: 10px 0;
   background-color: transparent;
   cursor: pointer;
   z-index: 999;
@@ -39,7 +38,15 @@
 }
 .menu-button.is-open .icon-cross {
 display: block;
-// display: flex;
+}
+.icon-cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+}
+.icon-burger {
+  display: flex;
   justify-content: center;
   align-items: center;
   background-size: contain;
@@ -67,14 +74,17 @@ display: none;
 .mobile-navigation__list {
  list-style: none;
  padding: 0;
-@media screen and (max-width: 767px) {
- font-weight: 500;
- font-size: 40px;
  line-height: 1.175;
  letter-spacing: 0.02em;
  list-style: none;
+ font-weight: 500;
  margin: 0;
  text-align: start;
+@media screen and (max-width: 479px) {
+ font-size: 20px;
+}
+@media screen and (min-width:480px) and (max-width: 767px) {
+ font-size: 40px;
  }
 }
 .mobile-navigation__item:not(:last-child) {
@@ -83,48 +93,45 @@ display: none;
 .mobile-navigation__link {
   text-decoration: none;
   color: var(--primary-text-color);
-  font-size: 40px;
   @include transition (color);
   &:hover, &:focus {
   color: var(--accent-color);  
    }
-@media screen and (max-width: 479px) {
-  font-size: 20px;
- }
 }
 .mobile-navigation__link--current {
   color: var(--accent-color);
   text-decoration: none;
-  font-size: 40px;
-  @media screen and (max-width: 479px) {
-  font-size: 20px;
- }
 }
 .mobile-info__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 .mobile-info__link {
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: 500;
   line-height: 1.166;
-  letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--paragraph-text-color);
 @media screen and (max-width: 479px) {
-  font-size: 20px;
+ font-size: 20px;
+}
+@media screen and (min-width:480px) and (max-width: 767px) {
+ font-size: 24px;
  }
 }
 .mobile-info__item:not(:last-child) {
     margin-bottom: 32px;
 }
 .mobile-phone__link {
-  font-weight: 500;
-  font-size: 34px;
   line-height: 1.176;
-  letter-spacing: 0.02em;
   color: var(--accent-color);
+@media screen and (max-width: 479px) {
+ font-size: 20px;
+}
+@media screen and (min-width:480px) and (max-width: 767px) {
+ font-size: 34px;
+ }
 }
 .mobile-social__list {
   list-style: none;
