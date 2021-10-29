@@ -30,6 +30,8 @@
 .menu-button__svg {
   fill: var( --primary-text-color);
   @include transition (fill);
+  justify-content: center;
+  align-items: center;
 &:hover, &:focus {
   fill: var(--accent-color);
   }
