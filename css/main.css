@@ -342,6 +342,7 @@ summary {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    padding: 32px 0;
   }
 }
 

@@ -31,6 +31,7 @@
 @media screen and (min-width: 1200px) {
   @include flex ($ai: center);
   align-items: baseline;
+  padding: 32px 0;
  } 
 }
 .header-info__item {
