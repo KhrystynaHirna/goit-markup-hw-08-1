@@ -1551,6 +1551,7 @@ summary {
   letter-spacing: 0.03em;
   -ms-flex-line-pack: center;
       align-content: center;
+  color: var(--body-background-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -1804,6 +1805,13 @@ img {
   transition-property: all;
 }
 
+.secondary-button--current:hover, .secondary-button--current:focus {
+  background: var(--accent-color);
+  color: var(--body-background-color);
+  -webkit-box-shadow: var(--secondary-button-shadow);
+          box-shadow: var(--secondary-button-shadow);
+}
+
 .close-button {
   fill: var(--logo-black-color);
   width: 30px;
@@ -1856,7 +1864,7 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: auto;
-  padding: 0;
+  padding: 10px 0;
   background-color: transparent;
   cursor: pointer;
   z-index: 999;

@@ -62,6 +62,11 @@
   margin-top: 0;
   cursor: pointer;
   @include transition (all);
+&:hover, &:focus {
+    background: var(--accent-color);
+  color: var(--body-background-color);
+  box-shadow: var(--secondary-button-shadow); 
+  }
 }
 
 // Modal button
