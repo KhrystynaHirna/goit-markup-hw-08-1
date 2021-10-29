@@ -30,10 +30,6 @@
 .menu-button__svg {
   fill: var( --primary-text-color);
   @include transition (fill);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: contain;
 &:hover, &:focus {
   fill: var(--accent-color);
   }
@@ -43,9 +39,17 @@
 }
 .menu-button.is-open .icon-cross {
 display: block;
+// display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
 }
 .menu-button .icon-burger {
   display: block;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
 }
 .menu-button.is-open .icon-burger {
 display: none;

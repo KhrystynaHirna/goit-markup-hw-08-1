@@ -1883,16 +1883,6 @@ img {
   transition: 250ms var(--timing-function);
   -webkit-transition-property: fill;
   transition-property: fill;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-size: contain;
 }
 
 .menu-button__svg:hover, .menu-button__svg:focus {
@@ -1905,10 +1895,24 @@ img {
 
 .menu-button.is-open .icon-cross {
   display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: contain;
 }
 
 .menu-button .icon-burger {
   display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: contain;
 }
 
 .menu-button.is-open .icon-burger {
