@@ -1896,7 +1896,7 @@ img {
   display: block;
 }
 
-.menu-button__svg .icon-cross {
+.menu-button .menu-button__svg .icon-cross {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1909,7 +1909,7 @@ img {
   background-size: contain;
 }
 
-.menu-button__svg .icon-burger {
+.menu-button .menu-button__svg .icon-burger {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1924,13 +1924,6 @@ img {
 
 .menu-button .icon-burger {
   display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-size: contain;
 }
 
 .menu-button.is-open .icon-burger {

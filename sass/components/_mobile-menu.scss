@@ -39,13 +39,13 @@
 .menu-button.is-open .icon-cross {
 display: block;
 }
-.menu-button__svg .icon-cross {
+.menu-button .menu-button__svg .icon-cross {
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: contain;
 }
-.menu-button__svg .icon-burger {
+.menu-button .menu-button__svg .icon-burger {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,10 +53,6 @@ display: block;
 }
 .menu-button .icon-burger {
   display: block;
-  // display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: contain;
 }
 .menu-button.is-open .icon-burger {
 display: none;
