@@ -1842,7 +1842,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   max-width: 767px;
   z-index: 998;
   position: fixed;
@@ -1858,6 +1858,9 @@ img {
 
 .menu-container.is-open {
   display: block;
+  width: 100%;
+  height: 100vh;
+  max-width: 767px;
 }
 
 .menu-button {
