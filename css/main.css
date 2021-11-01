@@ -1897,6 +1897,11 @@ img {
   fill: var(--accent-color);
 }
 
+.icon-cross {
+  width: 18px;
+  height: 18px;
+}
+
 .page-header__container .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
