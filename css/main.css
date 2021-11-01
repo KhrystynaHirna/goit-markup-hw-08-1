@@ -297,7 +297,7 @@ summary {
   position: relative;
 }
 
-.page-header .menu-button {
+.page-header > .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
