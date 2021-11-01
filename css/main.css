@@ -1861,14 +1861,16 @@ img {
 }
 
 .menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: auto;
   background-color: transparent;
   cursor: pointer;
   z-index: 999;
   border-color: transparent;
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1878,6 +1880,15 @@ img {
 }
 
 .menu-button__svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   fill: var(--primary-text-color);
   -webkit-transition: 250ms var(--timing-function);
   transition: 250ms var(--timing-function);
@@ -1887,6 +1898,18 @@ img {
 
 .menu-button__svg:hover, .menu-button__svg:focus {
   fill: var(--accent-color);
+}
+
+.icon-cross {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-button .icon-cross {
