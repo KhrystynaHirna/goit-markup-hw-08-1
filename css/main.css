@@ -301,7 +301,7 @@ summary {
   position: relative;
 }
 
-.page-header .menu-button {
+.page-header .menu-button__svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
