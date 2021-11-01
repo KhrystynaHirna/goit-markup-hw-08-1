@@ -16,14 +16,14 @@
   display: block;
   }
 }
-.menu-container .menu-button {
+.menu-container.menu-button {
   display: flex;
   margin-left: auto;
   background-color: transparent;
   cursor: pointer;
   z-index: 999;
   border-color: transparent;
-  
+
   justify-content: center;
   align-items: center;
 

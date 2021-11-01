@@ -1861,7 +1861,7 @@ img {
   display: block;
 }
 
-.menu-container .menu-button {
+.menu-container.menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1881,7 +1881,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .menu-container .menu-button {
+  .menu-container.menu-button {
     display: none;
   }
 }
