@@ -1897,11 +1897,6 @@ img {
   fill: var(--accent-color);
 }
 
-.icon-cross {
-  width: 18px;
-  height: 18px;
-}
-
 .page-header__container .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1911,6 +1906,11 @@ img {
           align-items: center;
   padding: 0;
   width: 100%;
+}
+
+.icon-cross {
+  width: 18.67px;
+  height: 18.67px;
 }
 
 .menu-button .icon-cross {
