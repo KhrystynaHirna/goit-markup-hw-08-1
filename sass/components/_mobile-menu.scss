@@ -15,7 +15,7 @@
 &.is-open {
   display: block;
   }
-& > .menu-button {
+& > .menu-button__svg {
   @include flex ($jc:center, $ai:center);
   width: 100%;
   height: 100%;
