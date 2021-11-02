@@ -11,7 +11,7 @@
   padding: 0;
   } 
 }
-.page-header > .menu-button {
+.page-header.menu-button {
   @include flex ($jc:center, $ai:center);
   width: 100%;
   height: 100%;

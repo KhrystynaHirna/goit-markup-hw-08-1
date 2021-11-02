@@ -305,7 +305,7 @@ summary {
   }
 }
 
-.page-header > .menu-button {
+.page-header.menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1877,7 +1877,7 @@ img {
   display: block;
 }
 
-.menu-container > .menu-button {
+.menu-container.menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
