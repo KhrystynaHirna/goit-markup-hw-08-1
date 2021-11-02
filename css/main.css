@@ -295,9 +295,11 @@ summary {
   padding-top: 16px;
   padding-bottom: 16px;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.page-header > .menu-button__svg {
+.page-header > .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1875,7 +1877,7 @@ img {
   display: block;
 }
 
-.menu-container > .menu-button__svg {
+.menu-container > .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
