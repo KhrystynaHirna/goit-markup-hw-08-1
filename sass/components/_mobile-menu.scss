@@ -15,11 +15,11 @@
   &.is-open {
   display: block;
   }
-  & > .menu-button {
-  @include flex ($jc:center, $ai:center);
+}
+.menu-container > .menu-button {
+   @include flex ($jc:center, $ai:center);
   width: 100%;
   height: 100%;
- }
 }
 .menu-button {
   display: flex;
