@@ -11,8 +11,10 @@
   padding: 0;
   } 
 }
-.page-header.menu-button {
-  @include flex ($jc:center, $ai:center);
+.page-header .menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
