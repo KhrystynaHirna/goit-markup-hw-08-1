@@ -12,9 +12,13 @@
   padding: 48px 40px;
   @include transition (opacity);
   
-  &.is-open {
+&.is-open {
   display: block;
   }
+& > .menu-button {
+  @include flex ($jc:center, $ai:center);
+  width: 100%;
+  height: 100%;
 }
 .menu-button {
   display: flex;
@@ -40,25 +44,6 @@
   fill: var(--accent-color);
   }
 }
-// .menu-button__svg.icon-cross {
-// display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   height: 100%;
-// }
-// .menu-button__svg.icon-burger {
-// display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 100%;
-//   height: 100%;
-// }
-
-// .page-header .menu-button {
-//   @include flex ($ai: center);
-//   padding: 0;
-// }
 
 .menu-button .icon-cross {
   display: none;
