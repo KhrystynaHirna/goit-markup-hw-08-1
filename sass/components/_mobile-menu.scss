@@ -1,6 +1,6 @@
 .menu-container {
   background-color: var(--body-background-color);
-  position: absolute;
+  // position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -8,7 +8,7 @@
   max-width: 767px;
   z-index: 998;
   position: fixed;
-  display: flex;
+  // display: flex;
   padding: 48px 40px;
   @include transition (opacity);
   
@@ -16,8 +16,17 @@
   display: block;
   }
 }
+.menu-container .menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
 .menu-button {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
   margin-left: auto;
   padding: 0;
 

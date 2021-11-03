@@ -1841,7 +1841,6 @@ img {
 
 .menu-container {
   background-color: var(--body-background-color);
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -1849,9 +1848,6 @@ img {
   max-width: 767px;
   z-index: 998;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 48px 40px;
   -webkit-transition: 250ms var(--timing-function);
   transition: 250ms var(--timing-function);
@@ -1863,10 +1859,24 @@ img {
   display: block;
 }
 
+.menu-container .menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
 .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40px;
+  min-height: 40px;
   margin-left: auto;
   padding: 0;
   background-color: transparent;
