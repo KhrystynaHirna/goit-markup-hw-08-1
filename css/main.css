@@ -1864,6 +1864,7 @@ img {
   position: absolute;
   right: 15px;
   top: 10px;
+  margin: 0;
 }
 
 .menu-button {
