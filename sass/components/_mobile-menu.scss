@@ -50,6 +50,10 @@
   margin: 0;
   fill: var( --primary-text-color);
   @include transition (fill);
+&:hover,
+&:focus {
+    fill: var(--accent-color);
+  }
 }
 .menu-button .icon-cross {
   display: none;

@@ -1912,6 +1912,10 @@ img {
   transition-property: fill;
 }
 
+.menu-button.is-open:hover, .menu-button.is-open:focus {
+  fill: var(--accent-color);
+}
+
 .menu-button .icon-cross {
   display: none;
 }
