@@ -1841,7 +1841,6 @@ img {
 
 .menu-container {
   background-color: var(--body-background-color);
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -1856,7 +1855,7 @@ img {
   transition-property: opacity;
 }
 
-.menu-container.js-open-menu {
+.menu-container.is-open {
   display: block;
 }
 
@@ -1901,28 +1900,6 @@ img {
 .menu-toggle:hover,
 .menu-toggle:focus {
   fill: var(--accent-color);
-}
-
-.menu-toggle .icon-cross {
-  display: none;
-}
-
-.menu-toggle.js-open-menu .icon-cross {
-  display: block;
-}
-
-.menu-toggle .icon-burger {
-  display: block;
-}
-
-.menu-toggle.js-open-menu .icon-burger {
-  display: none;
-}
-
-.menu-container.js-open-menu {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
 }
 
 .mobile__list {
