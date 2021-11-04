@@ -1906,7 +1906,7 @@ img {
   fill: var(--accent-color);
 }
 
-.menu-button .icon-burger {
+.menu-button .icon-cross {
   display: none;
 }
 
@@ -1914,11 +1914,11 @@ img {
   display: block;
 }
 
-.menu-button .icon-cross {
+.menu-button .icon-burger {
   display: block;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-button.is-open .icon-burger {
   display: none;
 }
 
