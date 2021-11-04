@@ -1860,7 +1860,7 @@ img {
   display: block;
 }
 
-.menu-container > .menu-button {
+.menu-container .menu-button {
   position: absolute;
   right: 0;
   top: 0;
@@ -1884,7 +1884,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .menu-container > .menu-button {
+  .menu-container .menu-button {
     display: none;
   }
 }
