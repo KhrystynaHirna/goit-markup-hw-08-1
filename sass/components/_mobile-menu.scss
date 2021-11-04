@@ -36,6 +36,12 @@
   display: none;
   }
 }
+.menu-button {
+&:hover,
+&:focus {
+    fill: var(--accent-color);
+  }
+}
 .menu-button.is-open {
   position: absolute;
   right: 15px;
