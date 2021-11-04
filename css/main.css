@@ -1860,13 +1860,6 @@ img {
   display: block;
 }
 
-.menu-container .menu-button {
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  margin: 0;
-}
-
 .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1896,6 +1889,13 @@ img {
   .menu-button {
     display: none;
   }
+}
+
+.menu-container .menu-button {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  margin: 0;
 }
 
 .menu-button:hover,
