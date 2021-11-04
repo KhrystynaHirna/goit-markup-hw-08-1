@@ -12,12 +12,12 @@
   padding: 48px 40px;
   @include transition (opacity);
   
-  &.is-open {
+&.is-open {
   display: block;
-  }
 @media screen and (min-width: 768px) {
   display: none;
   } 
+}
 }
 .menu-button {
   display: flex;
