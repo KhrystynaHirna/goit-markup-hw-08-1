@@ -1906,6 +1906,10 @@ img {
   fill: var(--accent-color);
 }
 
+.menu-button.is-open .icon-burger {
+  display: block;
+}
+
 .menu-container.is-open {
   opacity: 1;
   visibility: visible;
