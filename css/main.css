@@ -1905,6 +1905,9 @@ img {
   right: 15px;
   top: 10px;
   margin: 0;
+}
+
+.menu-button.is-open.is-close {
   fill: var(--primary-text-color);
   -webkit-transition: 250ms var(--timing-function);
   transition: 250ms var(--timing-function);
@@ -1912,7 +1915,7 @@ img {
   transition-property: fill;
 }
 
-.menu-button.is-open:hover, .menu-button.is-open:focus {
+.menu-button.is-open.is-close:hover, .menu-button.is-open.is-close:focus {
   fill: var(--accent-color);
 }
 
