@@ -1841,6 +1841,7 @@ img {
 
 .menu-container {
   background-color: var(--body-background-color);
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -1859,11 +1860,10 @@ img {
   display: block;
 }
 
-.menu-container .menu-button {
+.menu-container > .menu-button {
   position: absolute;
-}
-
-.menu-button {
+  right: 0;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1884,7 +1884,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu-container > .menu-button {
     display: none;
   }
 }

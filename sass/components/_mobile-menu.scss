@@ -1,6 +1,6 @@
 .menu-container {
   background-color: var(--body-background-color);
-  // position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -16,12 +16,11 @@
   display: block;
   }
 }
-.menu-container .menu-button {
+
+.menu-container > .menu-button {
   position: absolute;
-  // top: 10px;
-  // right: 15px;
-}
-.menu-button {
+  right: 0;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
