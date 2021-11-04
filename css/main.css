@@ -1890,14 +1890,14 @@ img {
   }
 }
 
-.menu-container .menu-button {
+.menu-button .is-close {
   position: absolute;
   right: 15px;
   top: 10px;
   margin: 0;
 }
 
-.menu-container .menu-button:hover, .menu-container .menu-button:focus {
+.menu-button .is-close:hover, .menu-button .is-close:focus {
   fill: var(--accent-color);
 }
 
