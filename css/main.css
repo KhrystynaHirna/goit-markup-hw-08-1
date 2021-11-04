@@ -1912,18 +1912,6 @@ img {
   transition-property: fill;
 }
 
-.menu-button.is-close {
-  fill: var(--primary-text-color);
-  -webkit-transition: 250ms var(--timing-function);
-  transition: 250ms var(--timing-function);
-  -webkit-transition-property: fill;
-  transition-property: fill;
-}
-
-.menu-button.is-close:hover, .menu-button.is-close:focus {
-  fill: var(--accent-color);
-}
-
 .menu-button .icon-cross {
   display: none;
 }
