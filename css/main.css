@@ -1861,8 +1861,6 @@ img {
 
 .menu-container .menu-button {
   position: absolute;
-  top: 10px;
-  right: 15px;
 }
 
 .menu-button {
@@ -1891,7 +1889,7 @@ img {
   }
 }
 
-.menu-button__svg {
+.menu-button {
   fill: var(--primary-text-color);
   -webkit-transition: 250ms var(--timing-function);
   transition: 250ms var(--timing-function);
@@ -1899,7 +1897,7 @@ img {
   transition-property: fill;
 }
 
-.menu-button__svg:hover, .menu-button__svg:focus {
+.menu-button:hover, .menu-button:focus {
   fill: var(--accent-color);
 }
 
