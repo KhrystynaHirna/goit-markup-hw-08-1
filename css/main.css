@@ -1906,8 +1906,20 @@ img {
   fill: var(--accent-color);
 }
 
+.menu-button .icon-burger {
+  display: none;
+}
+
 .menu-button.is-open .icon-cross {
   display: block;
+}
+
+.menu-button .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-cross {
+  display: none;
 }
 
 .menu-container.is-open {
