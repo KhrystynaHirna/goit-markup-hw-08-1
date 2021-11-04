@@ -1839,7 +1839,7 @@ img {
   fill: var(--accent-color);
 }
 
-.mobile-menu {
+.menu-container {
   background-color: var(--body-background-color);
   position: absolute;
   top: 0;
@@ -1856,7 +1856,7 @@ img {
   transition-property: opacity;
 }
 
-.mobile-menu.js-open-menu {
+.menu-container.js-open-menu {
   display: block;
 }
 
@@ -1891,7 +1891,7 @@ img {
   }
 }
 
-.mobile-menu .menu-toggle {
+.menu-container .menu-toggle {
   position: absolute;
   right: 15px;
   top: 10px;
@@ -1919,7 +1919,7 @@ img {
   display: none;
 }
 
-.mobile-menu.js-open-menu {
+.menu-container.js-open-menu {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
