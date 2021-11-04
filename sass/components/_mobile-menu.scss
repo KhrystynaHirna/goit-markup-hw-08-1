@@ -33,17 +33,16 @@
   cursor: pointer;
   z-index: 999;
   border: none;
+  fill: var( --primary-text-color);
+  @include transition (fill);
 
 @media screen and (min-width: 768px) {
   display: none;
   }
 }
-.menu-button {
-  fill: var( --primary-text-color);
-  @include transition (fill);
-&:hover, &:focus {
+.menu-button:hover, 
+.menu-button:focus {
   fill: var(--accent-color);
-  }
 }
 
 .menu-button .icon-cross {

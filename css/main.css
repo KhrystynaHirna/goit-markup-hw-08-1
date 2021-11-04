@@ -1881,6 +1881,11 @@ img {
   cursor: pointer;
   z-index: 999;
   border: none;
+  fill: var(--primary-text-color);
+  -webkit-transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
+  -webkit-transition-property: fill;
+  transition-property: fill;
 }
 
 @media screen and (min-width: 768px) {
@@ -1889,15 +1894,8 @@ img {
   }
 }
 
-.menu-button {
-  fill: var(--primary-text-color);
-  -webkit-transition: 250ms var(--timing-function);
-  transition: 250ms var(--timing-function);
-  -webkit-transition-property: fill;
-  transition-property: fill;
-}
-
-.menu-button:hover, .menu-button:focus {
+.menu-button:hover,
+.menu-button:focus {
   fill: var(--accent-color);
 }
 
