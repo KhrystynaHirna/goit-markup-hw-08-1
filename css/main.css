@@ -1906,7 +1906,7 @@ img {
   fill: var(--accent-color);
 }
 
-.menu-button.is-open .icon-burger {
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
