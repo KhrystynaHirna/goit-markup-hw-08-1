@@ -16,7 +16,7 @@
   display: block;
   }
 }
-.menu-toggle {
+.menu-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,33 +36,33 @@
   display: none;
   }
 }
-.menu-container .menu-toggle {
+.menu-container .menu-button {
   position: absolute;
   right: 15px;
   top: 10px;
   margin: 0;
 }
-.menu-toggle:hover, 
-.menu-toggle:focus {
+.menu-button:hover, 
+.menu-button:focus {
   fill: var(--accent-color);
 }
-// .menu-toggle .icon-cross {
-//   display: none;
-// }
-// .menu-toggle.js-open-menu .icon-cross {
-//   display: block;
-// }
-// .menu-toggle .icon-burger {
-//   display: block;
-// }
-// .menu-toggle.js-open-menu .icon-burger {
-// display: none;
-// }
-// .menu-container.js-open-menu {
-//   opacity: 1;
-//   visibility: visible;
-//   pointer-events: initial;
-// }
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button .icon-burger {
+  display: block;
+}
+.menu-button.is-open .icon-burger {
+display: none;
+}
+.menu-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
  .mobile__list {
   display: flex;
   width: 100%;

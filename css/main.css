@@ -1859,7 +1859,7 @@ img {
   display: block;
 }
 
-.menu-toggle {
+.menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1885,21 +1885,43 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .menu-toggle {
+  .menu-button {
     display: none;
   }
 }
 
-.menu-container .menu-toggle {
+.menu-container .menu-button {
   position: absolute;
   right: 15px;
   top: 10px;
   margin: 0;
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
+.menu-button:hover,
+.menu-button:focus {
   fill: var(--accent-color);
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button .icon-burger {
+  display: block;
+}
+
+.menu-button.is-open .icon-burger {
+  display: none;
+}
+
+.menu-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
 }
 
 .mobile__list {
