@@ -55,7 +55,7 @@
     fill: var(--accent-color);
   }
 }
-.menu-button.is-close {
+.menu-buttonc.icon-cross {
   fill: var( --primary-text-color);
   @include transition (fill);
 &:hover,
