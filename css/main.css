@@ -1897,6 +1897,10 @@ img {
   margin: 0;
 }
 
+.menu-container .menu-button:hover, .menu-container .menu-button:focus {
+  fill: var(--accent-color);
+}
+
 .menu-button:hover,
 .menu-button:focus {
   fill: var(--accent-color);
