@@ -49,14 +49,13 @@
   top: 10px;
   margin: 0;
 }
-.menu-button.is-open.is-close {
+.menu-button.is-close.is-open {
   fill: var( --primary-text-color);
   @include transition (fill);
 &:hover,
 &:focus {
     fill: var(--accent-color);
   }
-
 }
 .menu-button .icon-cross {
   display: none;
