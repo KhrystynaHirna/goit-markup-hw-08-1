@@ -20,7 +20,7 @@
     <header class="page-header">
       <div class="page-header__container">
         <a href="/index.html" class="logo">Web<span class="logo--black">Studio</span></a>
-        <button class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
           <svg aria-label="Переключатель" width="24" height="16">
             <use class="icon-cross" href="./img/sprite.svg#icon-burger"></use>
           </svg>
@@ -51,8 +51,8 @@
       </div>
     </header>
     <!-- Мобільне меню -->
-    <div class="menu-container is-hidden" id="menu-container" data-menu>
-      <button class="menu-button is-close" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+    <div class="menu-container js-menu-container" id="mobile-menu" data-menu>
+      <button class="menu-toggle js-close-menu">
         <svg aria-label="Переключатель" width="18.67" height="18.67">
           <use class="icon-burger" href="./img/sprite.svg#icon-cross"></use>
         </svg>

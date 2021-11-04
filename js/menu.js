@@ -14,12 +14,12 @@
 // })();
 
 (() => {
-  const mobileMenu = document.querySelector("[data-menu-button]");
+  const menuBtnRef = document.querySelector("[data-menu-button]");
   const openMenuBtn = document.querySelector('.is-open');
   const closeMenuBtn = document.querySelector('.is-close');
 
   const toggleMenu = () => {
-    const isMenuOpen =
+  const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');

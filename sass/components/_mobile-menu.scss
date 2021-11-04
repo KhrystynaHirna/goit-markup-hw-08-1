@@ -12,11 +12,11 @@
   padding: 48px 40px;
   @include transition (opacity);
   
-  &.is-open {
+  &.js-open-menu {
   display: block;
   }
 }
-.menu-button {
+.menu-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,29 +36,29 @@
   display: none;
   }
 }
-.menu-container .menu-button {
+.menu-container .menu-toggle {
   position: absolute;
   right: 15px;
   top: 10px;
   margin: 0;
 }
-.menu-button:hover, 
-.menu-button:focus {
+.menu-toggle:hover, 
+.menu-toggle:focus {
   fill: var(--accent-color);
 }
-.menu-button .icon-cross {
+.menu-toggle .icon-cross {
   display: none;
 }
-.menu-button.is-open .icon-cross {
+.menu-toggle.js-open-menu .icon-cross {
   display: block;
 }
-.menu-button .icon-burger {
+.menu-toggle .icon-burger {
   display: block;
 }
-.menu-button.is-open .icon-burger {
+.menu-toggle.js-open-menu .icon-burger {
 display: none;
 }
-.menu-container.is-open {
+.menu-container.js-open-menu {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
