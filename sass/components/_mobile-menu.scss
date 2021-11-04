@@ -16,11 +16,13 @@
   display: block;
   }
 }
-
-.menu-button {
+.menu-container .menu-button {
   position: absolute;
   right: 15px;
   top: 10px;
+}
+
+.menu-button {
   display: flex;
   justify-content: center;
   align-items: center;
