@@ -38,8 +38,6 @@
 @media screen and (min-width: 768px) {
   display: none;
   }
-}
-.menu-button {
 &:hover,
 &:focus {
     fill: var(--accent-color);
@@ -50,6 +48,8 @@
   right: 15px;
   top: 10px;
   margin: 0;
+  fill: var( --primary-text-color);
+  @include transition (fill);
 &:hover,
 &:focus {
     fill: var(--accent-color);
