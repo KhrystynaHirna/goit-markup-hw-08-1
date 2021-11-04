@@ -49,7 +49,7 @@
   top: 10px;
   margin: 0;
 }
-.menu-button.is-close.is-open {
+.menu-button.is-close {
   fill: var( --primary-text-color);
   @include transition (fill);
 &:hover,
