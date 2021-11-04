@@ -1862,8 +1862,8 @@ img {
 
 .menu-button {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 15px;
+  top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
