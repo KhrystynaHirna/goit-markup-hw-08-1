@@ -15,6 +15,9 @@
   &.is-open {
   display: block;
   }
+@media screen and (min-width: 768px) {
+  display: none;
+  } 
 }
 .menu-button {
   display: flex;

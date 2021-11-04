@@ -1859,6 +1859,12 @@ img {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
 .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
