@@ -1860,7 +1860,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .menu-container {
+  .menu-container.is-open {
     display: none;
   }
 }
