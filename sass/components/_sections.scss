@@ -22,7 +22,8 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/hero-480px.jpg);
-    max-width: 1600px;
+    // max-width: 1600px;
+    background-size: cover;
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -55,10 +56,10 @@
   @extend .container; 
 }
 .product-section {
-   @media screen and (max-width:1199px) {
+@media screen and (max-width:1199px) {
    display: none;
 }
-  @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
    margin: 0;
    padding-bottom: 94px;
 }
@@ -68,7 +69,7 @@
 }
 .team-section {
   background-color: var(--team-background-color);
-@media screen and (min-width:480px) {
+@media screen and (min-width:320px) {
   padding: 60px 0;
 } 
 @media screen and (min-width:1200px) {
@@ -79,7 +80,7 @@
   @extend .container;
 }
 .clients-section {
-@media screen and (min-width:480px) {
+@media screen and (min-width:320px) {
   padding: 60px 0;
 } 
 @media screen and (min-width:1200px) {

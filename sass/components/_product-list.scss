@@ -1,7 +1,7 @@
 // Product-section 
 .product-list {
   @extend %list;
-  @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
   padding-left: 0;
   padding-right: 0;
   display: flex;
@@ -10,12 +10,12 @@
 }
 .product-list__item {
   @extend %list;
-  @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
      position: relative;
   }
 }
 .product-list__overlay {
-  @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
     width: 370px;
   height: 70px;
   position: absolute;
@@ -28,7 +28,7 @@
   }
 }
 .product-list__text {
-  @media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {
   text-transform: uppercase;
   color: var(--body-background-color);
   font-size: 14px;

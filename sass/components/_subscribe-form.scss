@@ -13,13 +13,16 @@
 & .primary-button {
   @include flex ($ai: center);
   padding: 0;
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   margin-left: 12px;
   }
   }
 }
 .subscribe-form__input {
-  border-radius: 4px;
+  @media screen and (max-width: 479px) {
+  width: 300px;
+}
+ border-radius: 4px;
   @include border (1px, rgba(255, 255, 255, 0.3));
 
   box-sizing: border-box;
