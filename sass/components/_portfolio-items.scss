@@ -91,7 +91,7 @@
 .portfolio__item-link {
   text-decoration: none;
   display: block;
-  // @include transition (transform);
+  @include transition (transform);
   // transform: translateY(-100%);
   @include transition (opacity);
   // @include transition (box-shadow);

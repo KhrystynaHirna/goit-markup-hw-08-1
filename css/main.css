@@ -1488,6 +1488,11 @@ summary {
   display: block;
   -webkit-transition: 250ms var(--timing-function);
   transition: 250ms var(--timing-function);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition: 250ms var(--timing-function);
   -webkit-transition-property: opacity;
   transition-property: opacity;
   display: -webkit-box;
