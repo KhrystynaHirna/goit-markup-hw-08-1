@@ -92,6 +92,7 @@
   text-decoration: none;
   display: block;
   @include transition (transform);
+  transform: translateY(-100%);
   @include transition (opacity);
   @include transition (box-shadow);
 
@@ -101,8 +102,9 @@
     &:hover .overlay,
     &:focus .overlay {
       opacity: 1;
-      transform: translateY(-100%);
+      transform: translateY(100%);
       @include transition (opacity);
+      @include transition (transform);
     }
     display: flex;
     flex-direction: column;
@@ -125,10 +127,6 @@
     rgba(33, 150, 243, 0.9),
     rgba(33, 150, 243, 0.9)
   );
-  opacity: 0;
-  @include transition (transform);
-  @include transition (opacity);
-
 }
 .overlay__text {
     margin: 0;

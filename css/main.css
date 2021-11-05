@@ -1492,6 +1492,8 @@ summary {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   transition: 250ms var(--timing-function);
   -webkit-transition-property: opacity;
   transition-property: opacity;
@@ -1518,12 +1520,17 @@ summary {
 .portfolio__item-link:hover .overlay,
 .portfolio__item-link:focus .overlay {
   opacity: 1;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   -webkit-transition: 250ms var(--timing-function);
   transition: 250ms var(--timing-function);
   -webkit-transition-property: opacity;
   transition-property: opacity;
+  transition: 250ms var(--timing-function);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 .portfolio__item-thumb {
@@ -1544,16 +1551,6 @@ summary {
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(33, 150, 243, 0.9)), to(rgba(33, 150, 243, 0.9)));
   background-image: linear-gradient(to right, rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9));
-  opacity: 0;
-  -webkit-transition: 250ms var(--timing-function);
-  transition: 250ms var(--timing-function);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
-  transition: 250ms var(--timing-function);
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
 }
 
 .overlay__text {
@@ -1598,12 +1595,6 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
-}
-
-@media screen and (min-width: 320px) {
-  .container, .page-header__container, .footer__container, .advantage-section__container, .product-section__container, .team-section__container, .clients-section__container, .portfolio-section__container {
-    width: 320px;
-  }
 }
 
 @media screen and (min-width: 480px) {
