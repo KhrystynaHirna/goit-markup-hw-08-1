@@ -94,21 +94,21 @@
   @include transition (transform);
   // transform: translateY(-100%);
   @include transition (opacity);
-  // @include transition (box-shadow);
+  @include transition (box-shadow);
 
 &:hover, &:focus {
     box-shadow: var(--portfolio-card-shadow);
     opacity: 1;
     // transform: translateY(-100%);
-    @include transition (opacity);
-    @include transition (transform);
+    // @include transition (opacity);
+    // @include transition (transform);
     }
 &:hover .overlay,
 &:focus .overlay {
     opacity: 1;
-    @include transition (opacity);
     transform: translateY(-100%);
-    @include transition (transform);
+    // @include transition (opacity);
+    // @include transition (transform);
     }
     display: flex;
     flex-direction: column;
