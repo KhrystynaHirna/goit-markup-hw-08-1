@@ -21,7 +21,7 @@
 .footer__item--first {
 @media screen and (max-width: 767px){
   text-align: center;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   flex-grow: 1;
@@ -69,7 +69,7 @@
   letter-spacing: 0.03em;
   padding-left: 0;
   @extend %list;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .address__item:not(:last-child) {
   margin-bottom: 8px;

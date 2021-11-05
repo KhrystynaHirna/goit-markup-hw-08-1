@@ -948,7 +948,7 @@ summary {
 @media screen and (max-width: 767px) {
   .footer__item--first {
     text-align: center;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1017,7 +1017,7 @@ summary {
   line-height: 1.7;
   letter-spacing: 0.03em;
   padding-left: 0;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .address__item:not(:last-child) {
@@ -1434,6 +1434,7 @@ summary {
 }
 
 .portfolio__item-description {
+  padding: 20px 24px;
   border: var(--card-border-color);
   border-top: none;
   border: false solid false;
@@ -1467,8 +1468,8 @@ summary {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding: 20px 24px 4px;
   margin: 0;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
 }
 
@@ -1477,9 +1478,7 @@ summary {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  padding: 0 24px 20px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   min-width: 322px;
 }
 

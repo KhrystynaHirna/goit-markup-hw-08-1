@@ -53,6 +53,7 @@
   }
 }
 .portfolio__item-description {
+  padding: 20px 24px;
   border: var(--card-border-color);
   @include border ($use-bt: none);
 @media screen and (max-width:767px) {
@@ -73,9 +74,8 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  padding: 20px 24px 4px;
   margin: 0;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
 }
 .portfolio__item-text {
@@ -83,9 +83,7 @@
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  padding: 0 24px 20px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   min-width: 322px;
 }
 .portfolio__item-link {
