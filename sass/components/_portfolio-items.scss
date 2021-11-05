@@ -91,22 +91,22 @@
 .portfolio__item-link {
   text-decoration: none;
   display: block;
-  @include transition (transform);
+  // @include transition (transform);
   // transform: translateY(-100%);
-  @include transition (opacity);
-  @include transition (box-shadow);
+  // @include transition (opacity);
+  // @include transition (box-shadow);
 
-    &:hover, &:focus {
-      box-shadow: var(--portfolio-card-shadow);
-       opacity: 1;
-      transform: translateY(-100%);
-      @include transition (opacity);
-      @include transition (transform);
+&:hover, &:focus {
+    box-shadow: var(--portfolio-card-shadow);
+    opacity: 1;
+    transform: translateY(-100%);
+    @include transition (opacity);
+    @include transition (transform);
     }
-    &:hover .overlay,
-    &:focus .overlay {
-      opacity: 1;
-      transform: translateY(-100%);
+&:hover .overlay,
+&:focus .overlay {
+    opacity: 1;
+    transform: translateY(-100%);
     }
     display: flex;
     flex-direction: column;
