@@ -92,24 +92,22 @@
   text-decoration: none;
   display: block;
   @include transition (transform);
-  transform: translateY(-100%);
+  // transform: translateY(-100%);
   @include transition (opacity);
   @include transition (box-shadow);
 
     &:hover, &:focus {
-       box-shadow: var(--portfolio-card-shadow);
+      box-shadow: var(--portfolio-card-shadow);
        opacity: 1;
       transform: translateY(-100%);
       @include transition (opacity);
       @include transition (transform);
     }
-    // &:hover .overlay,
-    // &:focus .overlay {
-    //   opacity: 1;
-    //   // transform: translateY(-100%);
-    //   @include transition (opacity);
-    //   // @include transition (transform);
-    // }
+    &:hover .overlay,
+    &:focus .overlay {
+      opacity: 1;
+      transform: translateY(-100%);
+    }
     display: flex;
     flex-direction: column;
     height: 100%;
