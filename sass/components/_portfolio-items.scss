@@ -101,12 +101,13 @@
     opacity: 1;
     // transform: translateY(-100%);
     // @include transition (opacity);
-    @include transition (transform);
+    // @include transition (transform);
     }
 &:hover .overlay,
 &:focus .overlay {
     opacity: 1;
     transform: translateY(-100%);
+    @include transition (transform);
     }
     display: flex;
     flex-direction: column;
