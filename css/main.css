@@ -1486,6 +1486,10 @@ summary {
 .portfolio__item-link {
   text-decoration: none;
   display: block;
+  -webkit-transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1500,6 +1504,10 @@ summary {
   -webkit-box-shadow: var(--portfolio-card-shadow);
           box-shadow: var(--portfolio-card-shadow);
   opacity: 1;
+  -webkit-transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
 }
 
 .portfolio__item-link:hover .overlay,
