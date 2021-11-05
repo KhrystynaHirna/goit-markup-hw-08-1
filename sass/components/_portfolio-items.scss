@@ -99,9 +99,9 @@
 &:hover, &:focus {
     box-shadow: var(--portfolio-card-shadow);
     opacity: 1;
-    transform: translateY(-100%);
+    // transform: translateY(-100%);
     // @include transition (opacity);
-    // @include transition (transform);
+    @include transition (transform);
     }
 &:hover .overlay,
 &:focus .overlay {
