@@ -983,7 +983,7 @@ summary {
 
 @media screen and (max-width: 1199px) {
   .footer__item--third {
-    padding-top: 60px;
+    margin-top: 60px;
   }
 }
 
