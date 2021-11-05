@@ -106,6 +106,7 @@
 &:hover .overlay,
 &:focus .overlay {
     opacity: 1;
+    @include transition (opacity);
     transform: translateY(-100%);
     @include transition (transform);
     }
