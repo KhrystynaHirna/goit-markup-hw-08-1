@@ -1521,6 +1521,15 @@ summary {
   opacity: 1;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  -webkit-transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  transition: 250ms var(--timing-function);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 .portfolio__item-thumb {
