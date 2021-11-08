@@ -90,7 +90,7 @@
   text-decoration: none;
   display: block;
   // @include transition (transform);
-  // transform: translateY(-100%);
+ transition: 250ms var(--timing-function); 
   @include transition (opacity);
   // @include transition (box-shadow);
 

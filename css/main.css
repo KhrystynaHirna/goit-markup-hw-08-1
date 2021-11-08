@@ -1502,6 +1502,7 @@ summary {
   display: block;
   -webkit-transition: 250ms var(--timing-function);
   transition: 250ms var(--timing-function);
+  transition: 250ms var(--timing-function);
   -webkit-transition-property: opacity;
   transition-property: opacity;
   display: -webkit-box;
