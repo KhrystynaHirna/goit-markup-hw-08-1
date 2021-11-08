@@ -576,6 +576,10 @@ summary {
   }
 }
 
+.advantage-list__use {
+  width: 70px;
+}
+
 @media screen and (max-width: 767px) {
   .advantage-list__item:not(:last-child) {
     margin-bottom: 30px;

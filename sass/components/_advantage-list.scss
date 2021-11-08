@@ -18,6 +18,9 @@
   align-items: center;
   }
 }
+.advantage-list__use {
+  width: 70px;
+}
 .advantage-list__item {
 @media screen and (max-width: 767px) {
     &:not(:last-child) {
