@@ -84,7 +84,7 @@
   line-height: 1.9;
   letter-spacing: 0.03em;
   margin: 0;
-  min-width: 322px;
+  // min-width: 322px;
 }
 .portfolio__item-link {
   text-decoration: none;
@@ -141,7 +141,12 @@
     letter-spacing: 0.03em;
     align-content: center;
     color: var(--body-background-color);
-@media screen and (max-width:767px) {
+@media screen and (max-width:479px) {
+    // max-width: 354px;
+    font-size: 15px;
+    padding: 15px 24px;
+  }
+@media screen and (min-width:480px) and (max-width:767px) {
     padding: 77px 24px;
  }
 @media screen and (min-width:768px) {

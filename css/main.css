@@ -745,7 +745,8 @@ summary {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin-top: 30px;
+  margin-top: 0;
+  padding-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -1498,7 +1499,6 @@ summary {
   line-height: 1.9;
   letter-spacing: 0.03em;
   margin: 0;
-  min-width: 322px;
 }
 
 .portfolio__item-link {
@@ -1580,7 +1580,14 @@ summary {
   color: var(--body-background-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .overlay__text {
+    font-size: 15px;
+    padding: 15px 24px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .overlay__text {
     padding: 77px 24px;
   }
